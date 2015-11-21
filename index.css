@@ -1,4 +1,4 @@
 .txt-lable{width: 105px;height: 33px;display: block;font-family: arial;
 	font-size: 10px;color: #b28f80;line-height: 33px;font-weight: bold;}
 .btn1,.btn2{width: 100px;height: 25px;background-color: #d43400;
-	font-family: arial;color: #fff;border: none;text-align: center;line-height: 25px;font-weight: bold;}
+	font-family: arial;color: #fff;border: none;text-align: center;line-height: 25px;font-weight: bold;float:left;}
