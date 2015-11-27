@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>box-shadow</title>
-	<style>
+  <meta charset="UTF-8">
+  <title>box-shadow</title>
+  <style>
   h3{font-family: arial;font-size: 20px;color: blue;text-align: center;}
-  .box{margin: 0 auto;margin-top: 100px;}
-	.box {width: 300px;height: 300px;background-color: deeppink;box-shadow: 10px 10px 3px #888}/*box-shadow的第一个参数是水平偏移量，第二个是垂直偏移量，第三个是软化程度，第四个是颜色*/
-	</style>
+  .box1,.box2,.box3{margin: 0 auto;margin-top: 100px;}
+  .box1{width: 100px;height: 100px;background-color: deeppink;box-shadow: 10px 10px 10px #888}
+  .box2{width: 100px;height: 100px;background-color: #ccc;box-shadow: 0px 0px 10px #0cc}
+  .box3{width: 100px;height: 100px;background-color: deeppink;box-shadow: 50px 50px #0cc;}
+
+  /*box-shadow的第一个参数是水平偏移量,可以为0，第二个是垂直偏移量，第三个是软化程度，第四个是颜色*/
+  </style>
 </head>
 <body>
    <h3>第一天：box-shadow的简单应用</h3>   
-  	<div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
 </body>
 </html>
