@@ -1,3 +1,8 @@
+ h3 {
+   font-family: arial;
+   font-size: 20px;
+   color: blue;
+   text-align: center;}
 .box {
   width: 200px;
   height: 200px;
