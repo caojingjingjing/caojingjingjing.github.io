@@ -1,0 +1,19 @@
+.box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid blue;
+  position: relative;}
+.ball {
+  width: 50px;
+  height: 50px;
+  /*background-color: #0cc;*/
+  border-radius: 15px;
+  transition: all 3s;
+  position: absolute;
+  left:2px;
+  top:2px;}
+.box:hover .ball {
+  background-color: deeppink;
+  border-radius: 50%;
+  left:150px;/*box-ball的长度*/
+  top:150px;}
