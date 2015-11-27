@@ -7,7 +7,9 @@
   width: 200px;
   height: 200px;
   border: 3px solid blue;
-  position: relative;}
+  position: relative;
+  margin:0 auto;
+}
 .ball {
   width: 50px;
   height: 50px;
@@ -16,7 +18,9 @@
   transition: all 3s;
   position: absolute;
   left:2px;
-  top:2px;}
+  top:2px;
+  margin:0 auto;
+}
 .box:hover .ball {
   background-color: deeppink;
   border-radius: 50%;
