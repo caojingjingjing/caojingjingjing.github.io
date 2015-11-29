@@ -1,1 +1,11 @@
-a{font-size: 20px;font-family: arial;font-weight: bold;text-decoration: none;}
+a {
+	font-size: 20px;
+	font-family: "宋体";
+	font-weight: bold;
+	text-decoration: none;
+	color: blue;
+	transition:all 2s;
+}
+a:hover{color: deeppink;}
+
+
