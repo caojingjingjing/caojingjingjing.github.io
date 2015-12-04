@@ -1,0 +1,29 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+h3 {
+  font-family: arial;
+  font-size: 20px;
+  color: blue;
+  text-align: center;}
+.parent {
+ border: 2px solid blue;
+}
+.left {
+  width: 20%;
+  height: 50px;
+  background-color: #0cc;
+  float:left;
+}
+.right {
+  width: 80%;
+  height: 50px;
+  background-color: deeppink;
+  float:right;
+}
