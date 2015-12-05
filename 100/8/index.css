@@ -27,3 +27,28 @@ h3 {
   background-color: deeppink;
   float:right;
 }
+.first {
+ background-color: #0cc;
+ width: 80%;
+}
+.second {
+  width: 70%;
+  height: 50px;
+  background-color: deeppink;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.third {
+  width: 70%;
+  height: 50px;
+  background-color: deeppink;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.forth {
+  width: 40%;
+  height: 100px;
+  background-color: pink;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
