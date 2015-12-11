@@ -2,209 +2,95 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>样式命名</title>
+	<title>transform</title>
 	<style>
 	body {
-		/*width: 100%;*/
+		color: #fff;
+		font-family: arial;
+		position: relative;
+	}
+	
+	h3 {
+    	font-family: arial;
+    	font-size: 20px;
+    	color: blue;
+    	text-align: center;
+    	padding-bottom: 30px;}
+	.box1{
+		width: 100px;
+		height: 100px;
+		background-color: lightgreen;
+		position: absolute;
+		top:100px;
+		left:50px;
 		text-align: center;
+		line-height: 100px;
+		transform:translate(100px,100px);
+		transition:all 5s;
 		}
-	table {
-		margin:0 auto;
+	.box1:hover{
+		transform:translate(500px,200px);
+	}
+	.box2{
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		position: absolute;
+		top:200px;
+		left:350px;
+		text-align: center;
+		line-height: 100px;
+		transform: rotate(0deg);
+		transition:all 5s;
 		}
-	th {
+	.box2:hover{
+		transform: rotate(360deg);}	
+	.box3{
+		width: 100px;
+		height: 100px;
 		background-color: #0cc;
-		height: 30px;
+		position: absolute;
+		line-height: 100px;
+		top:200px;
+		left:550px;
+		text-align: center;
+		transform:scale(1,1);
+		transition:all 5s;
 		}
-	td {
-		width: 300px;
-		line-height: 30px;
-		background-color: #ddd;
+
+	.box3:hover{
+		transform:scale(2,2);/*x轴和y轴等大变化*/
 		}
+	.box4{
+		width: 150px;
+		height: 150px;
+		background-color: deeppink;
+		position: absolute;
+		top:200px;
+		left:750px;
+		text-align: center;
+		line-height: 150px;
+		transform:translate(0px,0px) rotate(0deg);
+		transition:all 5s;
+		}
+	.box4:hover{
+		transform:translate(400px,400px) rotate(360deg);}	
 	</style>
+
 </head>
-<body> 
-	<h1>样式命名</h1>
-		<table border="1" cellspacing="0" cellpadding="0">
-			<tr>
-			<th>样式</th>
-			<th>名称</th>
-		</tr>
-		<tr>
-			<td>容器</td>
-			<td>container</td>
-		</tr>
-		<tr>
-			<td>页头</td>
-			<td>header</td>
-		</tr>
-		<tr>
-			<td>内容</td>
-			<td>content</td>
-		</tr>
-		<tr>
-			<td>页面主体</td>
-			<td>main</td>
-		</tr>
-		<tr>
-			<td>页尾</td>
-			<td>footer</td>
-		</tr>
-		<tr>
-			<td>左右中</td>
-			<td>left right center</td>
-		</tr>
-		<tr>
-			<td>导航</td>
-			<td>navigation</td>
-		</tr>
-		<tr>
-			<td>栏目</td>
-			<td>column</td>
-		</tr>
-		<tr>
-			<td>侧栏</td>
-			<td>sidebar</td>
-		</tr>
-		<tr>
-			<td>页面外围控制整体布局宽度</td>
-			<td>wrapper</td>
-		</tr>
-		<tr>
-			<td>主导航</td>
-			<td>mainnav</td>
-		</tr>
-		<tr>
-			<td>子导航</td>
-			<td>subnav</td>
-		</tr>
-		<tr>
-			<td>左导航</td>
-			<td>leftsidebar</td>
-		</tr>
-		<tr>
-			<td>顶导航</td>
-			<td>topnav</td>
-		</tr>
-		<tr>
-			<td>右导航</td>
-			<td>rightsidebar</td>
-		</tr>
-		<tr>
-			<td>底导航</td>
-			<td>bottomnav</td>
-		</tr>
-		<tr>
-			<td>标题</td>
-			<td>title</td>
-		</tr>
-		<tr>
-			<td>摘要</td>
-			<td>summary</td>
-		</tr>
-		<tr>
-			<td>菜单</td>
-			<td>menu</td>
-		</tr>
-		<tr>
-			<td>子菜单</td>
-			<td>submenu</td>
-		</tr>
-		<tr>
-			<td>边导航</td>
-			<td>sidebar</td>
-		</tr>
-		<tr>
-			<td>标志</td>
-			<td>logo</td>
-		</tr>
-		<tr>
-			<td>登录</td>
-			<td>login</td>
-		</tr>
-		<tr>
-			<td>登录条</td>
-			<td>loginbar</td>
-		</tr>
-		<tr>
-			<td>注册</td>
-			<td>regsiter</td>
-		</tr>
-		<tr>
-			<td>加入</td>
-			<td>joinus</td>
-		</tr>
-		<tr>
-			<td>功能区</td>
-			<td>shop</td>
-		</tr>
-		<tr>
-			<td>搜索</td>
-			<td>search</td>
-		</tr>
-		<tr>
-			<td>状态</td>
-			<td>status</td>
-		</tr>
-		<tr>
-			<td>按钮</td>
-			<td>button</td>
-		</tr>
-		<tr>
-			<td>标签页</td>
-			<td>tab</td>
-		</tr>
-		<tr>
-			<td>文章列表</td>
-			<td>list</td>
-		</tr>
-		<tr>
-			<td>提示信息</td>
-			<td>msg</td>
-		</tr>
-		<tr>
-			<td>小技巧</td>
-			<td>tips</td>
-		</tr>
-		<tr>
-			<td>投票</td>
-			<td>vote</td>
-		</tr>
-		<tr>
-			<td>指南</td>
-			<td>guild</td>
-		</tr>
-		<tr>
-			<td>广告</td>
-			<td>banner</td>
-		</tr>
-		<tr>
-			<td>热点</td>
-			<td>hot</td>
-		</tr>
-		<tr>
-			<td>注释</td>
-			<td>note</td>
-		</tr>
-		<tr>
-			<td>图标</td>
-			<td>icon</td>
-		</tr>
-		<tr>
-			<td>合作伙伴</td>
-			<td>partner</td>
-		</tr>
-		<tr>
-			<td>友情链接</td>
-			<td>flink</td>
-		</tr>
-		<tr>
-			<td>版权</td>
-			<td>copyright</td>
-		</tr>
-		<tr>
-			<td>下载</td>
-			<td>download</td>
-		</tr>
-	</table>
+<body>
+	<h3>第十三天：transform的简单运用</h3>
+	<div class="box1">
+		translate
+	</div>
+	<div class="box2">
+		rotate
+	</div>
+	<div class="box3">
+		scale
+	</div>
+	<div class="box4">
+		translate和rotate
+	</div>
 </body>
 </html>
