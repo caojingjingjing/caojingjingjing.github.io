@@ -3,6 +3,13 @@
    font-size: 20px;
    color: blue;
    text-align: center;}
+  a {
+   text-decoration: none;
+   text-align: center;
+   display: block;
+   font-size: 30px;
+   padding-bottom: 20px;
+  }
 .box {
   width: 200px;
   height: 200px;
