@@ -1,0 +1,21 @@
+.nav-bar {
+	background-color: #0cc;
+	width: 70px;
+	height: 50px;
+	float: right;
+	display: none;
+}
+.humburger {
+	background-color: deeppink;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+@media(min-width: 500px){
+	.humburger {
+		display: none;
+	}
+	.nav-bar {
+		display: block;
+	}
+}

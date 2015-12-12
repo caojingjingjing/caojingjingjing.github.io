@@ -1,5 +1,5 @@
 *{margin: 0 auto;}
-.first,.second,.third {
+.first,.second {
 	text-align: center;
 	color: #fff;
 	font-size: 20px;
@@ -9,35 +9,19 @@
 	background-color: #E91E63;
 	height: 150px;
 }
-.second {
-	background-color: #03A9F4;
-	height: 150px;
-
-}
-.third {
-	background-color: #9C27B0;
-	height: 150px;
-}
-@media(min-width: 500px) {
+@media(min-width: 700px) {
 	.first {
 		float: left;
 		width: 50%;
 	}
+}
+.second {
+	background-color: #03A9F4;
+	height: 150px;
+}
+@media(min-width: 700px){
 	.second {
 		float: left;
 		width: 50%;
-	}
-	.third {
-		clear: both;
-	
-	}
-}
-@media(min-width: 800px){
-	.first,.second,.third {
-		width: 33.33%;
-	}
-	.third {
-		clear: none;
-		float: left;	
 	}
 }
