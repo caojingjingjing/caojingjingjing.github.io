@@ -5,14 +5,14 @@
 	float: right;
 	display: none;
 }
-.humburger {
+.humburger-btn {
 	background-color: deeppink;
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
 }
 @media(min-width: 500px){
-	.humburger {
+	.humburger-btn {
 		display: none;
 	}
 	.nav-bar {
