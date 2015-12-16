@@ -5,9 +5,10 @@
 	<title>responsive design</title>
 	<link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="clearfix">
 	<div class="first">1</div>
 	<div class="second">2</div>
 	<div class="third">3</div>
+	<p>前两个盒子使用了float,第三个盒子在屏幕大于500小于800时需要清除浮动，(clear:both)不然前两个盒子的不占位(float)会影响第三个盒子，但是当屏幕大于800时需要三个盒子放在一行，所有需要都float,但由于前边清除了前两个盒子的float,此时需要用clear：none清除前边的clear：both，才可以三个盒子都float.</p>
 </body>
 </html>

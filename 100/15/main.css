@@ -3,7 +3,7 @@
 	width: 70px;
 	height: 50px;
 	float: right;
-	display: none;
+	display: none;/*隐藏此页面*/
 }
 .humburger-btn {
 	background-color: deeppink;
@@ -17,5 +17,14 @@
 	}
 	.nav-bar {
 		display: block;
+		/*还原默认（显示此页面）*/
 	}
+}
+p {
+	font-family: arial;
+	font-size: 20px;
+
+}
+p:nth-of-type(1){
+	padding-top: 90px;
 }
