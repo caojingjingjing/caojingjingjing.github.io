@@ -7,7 +7,13 @@
 .clearfix:after {
     clear: both;
 }
-*{margin: 0 auto;}
+
+*{margin: 20px auto;}
+h3 {
+    font-family: arial;
+    font-size: 20px;
+    color: blue;
+    text-align: center;}
 .first,.second,.third {
 	text-align: center;
 	color: #fff;
@@ -50,19 +56,23 @@
 	}
 }
 p {
-	/*margin-top: 170px;因为都float了
-	所以给p设margin-top
+	/*margin-top: 170px;
 	其实是给p所在的盒子设置了margin-top,
 	clearfix可以解决,（前边学的margin重合问题）
-	但同样是margin-top的值
-	必须大于盒子的高度
-	因为三个盒子现在还是float的。*/
+	但是设置margin-top的值
+	仍然必须大于盒子的高度
+	因为三个盒子现在还是float的（不占位）*/
 	padding-top: 170px;
 	/*因为三个盒子都float了
 	所以p设置padding-top时候会自动
-	跑到盒子的下边，
+	跑到盒子的下边，（不占位）
 	所以设小于盒子的高度是无作用的。
 	必须设置大于盒子的高度。*/
 	font-size: 20px;
 	font-family: arial;
 }
+h3 {
+    font-family: arial;
+    font-size: 20px;
+    color: blue;
+    text-align: center;}

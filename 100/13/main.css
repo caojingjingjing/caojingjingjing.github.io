@@ -1,4 +1,9 @@
-*{margin: 0 auto;}
+*{margin: 20px auto;}
+h3 {
+    font-family: arial;
+    font-size: 20px;
+    color: blue;
+    text-align: center;}
 .first,.second {
 	text-align: center;
 	color: #fff;
