@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transforom</title>
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+	<style>
+	h1 {
+    	font-family: arial;
+    	font-size: 20px;
+    	color: blue;
+    	text-align: center;}
+	.box {
+  		background-color: pink;
+  		height: 100px;
+  		width: 100px;
+  		transition: all 5s .1s;
+}
+	.box.move {
+  		background-color: #0ff;
+  		border-radius:50%;
+  		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+  		transition: all 5s .1s;
+  		transform: translateX(1250px) rotate(360deg);}
+	</style>
+</head>
+<body>
+	<h1>第十九天：transform的js click简单运用</h1>
+	<div class="box"></div>
+	<script>
+	$('.box').click(function(){
+  		$(this).toggleClass('move');})
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.side-nav {
+	background-color: deeppink;
+	position: fixed;
+	/*top: 0px;*/
+	left: 100px;
+	height: 100px;
+	bottom: 100px;
+	/*position和top,left,bottom,right配合使用,
+	不设置固定高度*/
+	width: 100px;
+	}
+p:nth-of-type(1){
+	font-family: arial;
+	font-size: 20px;
+	color: red;
+}
+h1 {
+    font-family: arial;
+    font-size: 20px;
+    color: blue;
+    text-align: center;}	
