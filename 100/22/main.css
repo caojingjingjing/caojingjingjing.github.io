@@ -1,0 +1,21 @@
+.side-nav {
+	background-color: deeppink;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 250px;
+	transition:all 1s .1s;
+	transform:translateX(-250px);}
+.side-nav.show {
+	transform:translateX(0px);
+}
+.humburger-btn {
+	background-color:#0cc;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left:15px;
+}

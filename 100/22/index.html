@@ -7,12 +7,10 @@
 	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
 </head>
 <body>
-	<h1>第二十一天：position；fixed的使用</h1>
-	<p>1.position：fixed和float一样不占位置，内容会跑到盒子下边,而且位置固定不动</br>
-	2.position和top,left,bottom,right配合使用,不设置固定高度,top=0 bottom=0高度则自由延伸</p>
 	<div class="side-nav"></div>
+	<div class="humburger-btn"></div>
 	<script>
-	$('p').click(function(){
+	$('.humburger-btn').click(function(){
 		$('.side-nav').toggleClass('show');
 	})
 	</script>
