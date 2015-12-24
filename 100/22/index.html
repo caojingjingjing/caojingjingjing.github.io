@@ -7,10 +7,11 @@
 	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
 </head>
 <body>
+	<h1>第二十二天：如何用position：fixed设置上顶天下顶地</h1>
+	<p>1.position和top,left,bottom,right配合使用,不设置固定高度,top=0 bottom=0高度则自由延伸</p>
 	<div class="side-nav"></div>
-	<div class="humburger-btn"></div>
 	<script>
-	$('.humburger-btn').click(function(){
+	$('p').click(function(){
 		$('.side-nav').toggleClass('show');
 	})
 	</script>

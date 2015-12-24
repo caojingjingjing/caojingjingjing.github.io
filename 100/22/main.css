@@ -10,12 +10,13 @@
 .side-nav.show {
 	transform:translateX(0px);
 }
-.humburger-btn {
-	background-color:#0cc;
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	position: absolute;
-	top: 20px;
-	left:15px;
+p {
+	font-family: arial;
+	font-size: 20px;
+	text-align: center;
 }
+h1 {
+    font-family: arial;
+    font-size: 20px;
+    color: blue;
+    text-align: center;}
