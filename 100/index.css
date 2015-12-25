@@ -49,6 +49,7 @@ ul{
 }
 .toc a .id {
 	/*width: 48px;*/
+	width: 5%;
 	height: 96px;
 	background-color: rgb(0, 188, 212);
 	color: #fff;
