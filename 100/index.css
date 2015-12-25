@@ -25,8 +25,9 @@ body {
 	font-weight: normal;
 }
 .toc {
-	width: 960px;
-	margin: 20px auto;
+	/*width: 960px;*/
+	/*margin: 20px auto;*/
+	margin: 20px 10px;
 	list-style: none;
 }
 ul{
@@ -47,7 +48,7 @@ ul{
 	 box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
 }
 .toc a .id {
-	width: 48px;
+	/*width: 48px;*/
 	height: 96px;
 	background-color: rgb(0, 188, 212);
 	color: #fff;
@@ -56,9 +57,9 @@ ul{
 	float: left;
 }
 .toc a .detail {
-	width: 910px;
+	/*width: 910px;*/
 	height: 96px;
-	float: right;
+	/*float: right;*/
 	padding-left: 10px;
 	padding-top: 10px;
 }
