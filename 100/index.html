@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="24/css/font-awesome.min.css">
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
 </head>
 <body>
- <div class="hero clearfix">
-    <h1>百日百页面</h1>
- </div>  
+<a class="hamburger">
+<i class="icon-reorder"></i>
+</a>
+<div class="side-nav">
+      <ul>
+         <li>注册</li>
+         <li>登录</li>
+         <li><a href="../index.html">首页</a></li>
+      </ul>
+   </div>
+<div class="box"></div>
+   <div class="hero clearfix">
+      <h1>百日百页面</h1>
+   </div>  
    <ul class="toc clearfix">
       <li>
          <a class="clearfix" href="1">
@@ -127,7 +140,7 @@
       <li><a class="clearfix" href="15">
             <div class="id">15</div>
             <div class="detail">
-            <div class="title">行(块)元素display的使用</div>
+            <div class="title">行(块)元素的display的使用</div>
             <div class="date">2015年12月12日</div>
             </div>
          </a>
@@ -211,9 +224,7 @@
             <div class="date">2015年12月23日</div>
             </div>
          </a>
-      </li>
-      
-      
+      </li>  
       <li><a class="clearfix" href="26">
             <div class="id">26</div>
             <div class="detail">
@@ -222,7 +233,18 @@
             </div>
          </a>
       </li>
-    </ul> 
+    </ul>
+   <script>
+   $('.icon-reorder').click(function(){
+      $('.side-nav').addClass('show');
+      $('.box').addClass('show');
+   })
+   $('.box').click(function(){
+      $('.side-nav').removeClass('show');
+      $('.box').removeClass('show');
+      
+   })
+   </script>
 </body>
 </html>
 
