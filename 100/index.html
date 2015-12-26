@@ -18,7 +18,7 @@
          <li><a href="../index.html">首页</a></li>
       </ul>
    </div>
-<div class="box"></div>
+<div class="ui-mask"></div>
    <div class="hero clearfix">
       <h1>百日百页面</h1>
    </div>  
@@ -237,11 +237,11 @@
    <script>
    $('.icon-reorder').click(function(){
       $('.side-nav').addClass('show');
-      $('.box').addClass('show');
+      $('.ui-mask').addClass('show');
    })
-   $('.box').click(function(){
+   $('.ui-mask').click(function(){
       $('.side-nav').removeClass('show');
-      $('.box').removeClass('show');
+      $(this).removeClass('show');
       
    })
    </script>
