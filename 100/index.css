@@ -29,7 +29,7 @@ body {
 	margin: 20px auto;
 	list-style: none;
 	padding: 0px 10px;
-	max-width: 900px;
+	max-width: 600px;
 	/*在此处将列表变成盒子，
 	刚好因为盒子和内容正好一样大，
 	所以设置padding和margin看起来一样，但实则不一样。*/
