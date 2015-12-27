@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>position:fixed</title>
-    <link rel="stylesheet" href="main.css">
+<style>
+	h1 {
+    	font-family: arial;
+    	font-size: 20px;
+    	color: blue;
+    	text-align: center;
+     }
+	.box {
+		width: 100px;
+		height: 100px;
+		background-color: deeppink;
+		position: fixed;
+		top: 200px;
+		left: 150px;
+	}
+	p:nth-of-type(1){
+		font-family: arial;
+		font-size: 20px;
+		font-weight: bold;
+	}
+</style>
 </head>
 <body>
-    <h1>第二十一天：position；fixed的使用</h1>
-    <div class="side-nav"></div>
+    <h1>第二十一天：position:fixed的使用</h1>
+    <div class="box"></div>
     <p>
         1.position:fixed以body为坐标系定位</br>2.position和top,left,bottom,right配合使用</br>3.position：fixed和float一样不占位置,内容会跑到盒子下边,而且无论页面其他内容如何动，position：fixed位置固定不动</br>position:fixed以后盒子默认的100%高度和宽度则为0.
     </p>
