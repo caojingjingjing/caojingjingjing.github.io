@@ -82,6 +82,7 @@ ul{
 }
 .toc a .detail .title {
 	padding-bottom: 10px;
+	padding-top: 10px;
 	font-size:20px;
 }
 .toc a .detail .date {
