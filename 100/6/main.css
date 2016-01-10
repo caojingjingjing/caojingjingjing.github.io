@@ -1,0 +1,38 @@
+h1 {
+	font-family: arial;
+	color: blue;
+	text-align: center;
+}
+.box {
+	width: 250px;
+	height: 250px;
+	background-color: black;
+	margin: 20px auto;
+	position: relative;
+}
+.ball1,.ball2,.ball3,.ball4,.ball5{
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	border-radius: 50%;
+	transition: all 2s;
+}
+.box:hover .ball1{
+	left: 0px;
+	top: 0px;
+}
+.box:hover .ball2{
+	left:200px;
+	top: 0px;
+}
+.box:hover .ball3{
+	left: 0px;
+	top: 200px;
+}
+.box:hover .ball4{
+	left: 200px;
+	top: 200px;
+}

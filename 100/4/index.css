@@ -1,4 +1,4 @@
- h3 {
+ /*h3 {
    font-family: arial;
    font-size: 20px;
    color: blue;
@@ -33,7 +33,3 @@
   border-radius: 50%;
   left:150px;/*box-ball的长度*/
   top:150px;}
-/*position的绝对定位和相对定位必须配合使用，
-（父级盒子）定一个坐标系是relative(相对定位)，
-（子盒子）在坐标系内定位是absolute(绝对定位)，并且
-（使用top left bottom right中任意两个几个，也可以设置负值）确定位置*/
