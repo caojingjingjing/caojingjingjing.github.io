@@ -1,0 +1,37 @@
+body {
+	border: 1px red solid;
+	position: relative;
+}
+h1{
+	font-family:arial;
+	color: blue;
+	text-align: center;
+}
+p {
+	font-family: arial;
+	font-size: 20px;
+}
+span {
+	color: red;
+}
+.ball1 {
+	width: 50px;
+	height: 50px;
+	/*border: 2px lightgreen solid;*/
+	background-color: deeppink;
+	position: absolute;
+}
+.ball2 {
+	width: 50px;
+	height: 50px;
+	background-color: lightgreen;
+	position:absolute;
+	top:600px;
+	left:600px; 
+}
+.ball3 {
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	position: absolute;
+}

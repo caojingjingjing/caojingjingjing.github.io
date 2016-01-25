@@ -7,7 +7,6 @@
 	<style>
 	h1 {
     	font-family: arial;
-    	font-size: 20px;
     	color: blue;
     	text-align: center;}
 	.box {
@@ -17,19 +16,20 @@
   		transition: all 5s .1s;
 }
 	.box.move {
-  		background-color: #0ff;
+  		background-color: lightgreen;
   		border-radius:50%;
   		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
-  		transition: all 5s .1s;
+  /*		transition: all 5s .1s;*/
   		transform: translateX(1250px) rotate(360deg);}
 	</style>
 </head>
 <body>
 	<h1>第十九天:transform在jQuery中简单运用</h1>
 	<div class="box"></div>
-	<script>
-	$('.box').click(function(){
-  		$(this).toggleClass('move');})
-	</script>
+  <script>
+    $('.box').click(function(){
+      $(this).toggleClass('move');
+    })
+  </script>
 </body>
 </html>

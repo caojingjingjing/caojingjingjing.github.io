@@ -1,3 +1,7 @@
+h1 {
+    font-family: arial;
+    color: blue;
+    text-align: center;}
 .side-nav {
 	background-color: deeppink;
 	position: fixed;
@@ -15,8 +19,3 @@ p {
 	font-size: 20px;
 	text-align: center;
 }
-h1 {
-    font-family: arial;
-    font-size: 20px;
-    color: blue;
-    text-align: center;}

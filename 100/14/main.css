@@ -1,4 +1,4 @@
-.clearfix:before,
+/*.clearfix:before,
 .clearfix:after {
     content: " ";
     display: table;
@@ -6,73 +6,51 @@
 
 .clearfix:after {
     clear: both;
-}
+}*/
 
 *{margin: 20px auto;}
-h3 {
+h1 {
     font-family: arial;
-    font-size: 20px;
     color: blue;
     text-align: center;}
-.first,.second,.third {
-	text-align: center;
-	color: #fff;
-	font-size: 20px;
-	line-height: 150px;
-}
-.first {
-	background-color: #E91E63;
-	height: 150px;
-}
-.second {
-	background-color: #03A9F4;
-	height: 150px;
-}
-.third {
-	background-color: #0cc;
-	height: 150px;
-}
-@media(min-width: 500px){
-	.first {
-		float: left;
-		width: 50%;
-	}
-	.second {
-		float: left;
-		width: 50%;
-	}
-	.third {
-		clear: both;
-	}
-}
-@media(min-width: 800px){
-	.first,.second,.third
-	{
-		width: 33.3333%;
-	}
-	.third {
-		clear: none;
-		float: left;
-	}
-}
-p {
-	/*margin-top: 170px;
-	其实是给p所在的盒子设置了margin-top,
-	clearfix可以解决,（前边学的margin重合问题）
-	但是设置margin-top的值
-	仍然必须大于盒子的高度
-	因为三个盒子现在还是float的（不占位）*/
-	padding-top: 170px;
-	/*因为三个盒子都float了
-	所以p设置padding-top时候会自动
-	跑到盒子的下边，（不占位）
-	所以设小于盒子的高度是无作用的。
-	必须设置大于盒子的高度。*/
-	font-size: 20px;
-	font-family: arial;
-}
-h3 {
-    font-family: arial;
-    font-size: 20px;
-    color: blue;
-    text-align: center;}
+ p {
+ 	font-family: arial;
+ 	font-size: 20px;
+
+ }
+ .first,.second,.third {
+ 	font-weight: bold;
+ 	height: 150px;
+ 	line-height: 150px;
+ }
+ .first {
+ 	background-color: pink;
+ }
+ .second {
+ 	background-color: lightgreen
+ }
+ .third {
+ 	background-color:#03A9F4;;
+ }
+ .first,.second,.third {
+ 	text-align: center;
+ 	color: #fff;
+ }
+ @media(min-width: 500px){
+ 	.first,.second{
+ 		width: 50%;
+ 		float: left;
+ 	}
+ 	.third {
+ 		clear: both;
+ 	}
+ }
+ @media(min-width: 800px){
+ 	.first,.second,.third{
+ 		width: 33.33%;
+ 	}
+ 	.third {
+ 		clear: none;
+ 		float: left;
+ 	}
+ }

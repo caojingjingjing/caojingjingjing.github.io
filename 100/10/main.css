@@ -9,7 +9,6 @@
 .secondary-text-color  { color: #727272; }
 .divider-color         { border-color: #B6B6B6; }
 
-
 *{margin: 0;}
 a {
     text-decoration: none;
@@ -17,9 +16,8 @@ a {
     display: block;
     font-size: 30px;
   }
-  h3 {
+  h1 {
     font-family: arial;
-    font-size: 20px;
     color: blue;
     text-align: center;
 	padding:20px;}
