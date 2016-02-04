@@ -1,0 +1,146 @@
+/**{margin: 0;
+padding: 0;}*/
+*{
+	box-sizing:border-box;
+}
+h1 {
+    font-family: arial;
+    color: #fff;
+    text-align: center;
+     }
+body {
+	background-color: #333;
+}
+.box{
+	width: 800px;
+	height: 280px;
+	margin: 50px auto;
+	position: relative;
+}
+.box .link {
+	width: 200px;
+	height: 280px;
+	float: left;
+	margin: 0 20px;
+}
+.link .icon {
+	display: block;
+	width: 100%;/*继承父元素的宽度*/
+	height: 160px;
+	transition: all 0.2s;
+}
+.link-laugh .icon {
+	background: url(11.png) no-repeat center center;
+}
+.link-smile .icon {
+	background:  url(22.png) no-repeat center center;
+}
+.link-sleep .icon {
+	background:  url(33.png) no-repeat center center;
+}
+.link .icon:hover{
+		transform: rotate(360deg) scale(1.2);}
+.button {
+	display: block;
+	width: 130px;
+	height:30px;
+	line-height: 30px;
+	text-decoration: none;
+	color: #26e122;
+	font-family: arial;
+	font-weight: bold;
+	border: 2px solid #fff;
+	opacity: .8;
+	padding-left: 20px;
+	margin:0 auto;
+	transition:all 0.4s;
+	background:  url(66.png) no-repeat 60px center;
+	position: relative;
+}
+.button:hover{
+	opacity: 1;
+	background-position: 70px center;
+}
+.button .line {
+	display: block;
+	position: absolute;
+	background: none;/*开始的时候线条是没有的*/
+	transition:all 0.4s;
+	
+}
+.button:hover .line{
+	background: #fff;/*当鼠标经过的时候线条才是显示出来的*/
+}
+.button .line-top {
+	height: 2px;/*取决你设置的borderd的大小；*/
+	width: 0px;/*没有宽度，相当于是以一个点的形式，经过鼠标滑过
+	慢慢的变成横线*/
+	left: -110%;/*因为是看着是滑过来的，设置大于110%，看着像是从远处滑过来的*/
+	top: -2px;/*因为是要与边框左对齐，所以设置为-2px，
+	如果设置0px则是与父级盒子左对齐，
+	但是边框是附加在盒子外边的，所以设置-2px*/
+}
+.button:hover .line-top{
+	width: 100%;
+	left: -2px;
+}
+.button .line-right{
+	width: 2px;
+	height: 0px;/*没有高度，相当于是以一个点的形式，经过鼠标滑过
+	慢慢的变成竖线。*/
+	right: -2px;
+	top: -110%;
+}
+.button:hover .line-right {
+	height: 100%;
+	top: -2px;
+}
+.button .line-bottom {
+	height: 2px;
+	width: 0px;
+	bottom: -2px;
+	right: -110%;
+}
+.button:hover .line-bottom {
+	width: 100%;
+	right: -2px;
+}
+.button .line-left {
+	width: 2px;
+	height: 0px;
+	bottom: -110%;
+	left: -2px;
+}
+.button:hover .line-left {
+	height: 100%;
+	bottom: -2px;
+}
+.tip {
+	position: absolute;
+	padding: 0 14px;
+	height: 35px;
+	line-height: 35px;
+	background: #26e122;
+	color: #fff;
+	font-size: 18px;
+	margin:0 auto;
+	border-radius: 3px;
+	top: 100px;
+	opacity: 0;/*初始状态按钮时看不到的，*/
+}
+.tip em{
+	font-style: normal;/*字体不倾斜*/
+}
+.tip span{
+	display: block;
+	width: 0;/*做三角形宽和高为0*/
+	height: 0;
+	overflow: hidden;
+	border:7px solid transparent;/*transparent透明的，三角形的大小取决于
+	边框的大小*/
+	border-top-color: #26e122;/*如果三角形的尖儿朝下，就设置上边框的颜色*/
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	margin-left: -3px;
+}
