@@ -50,9 +50,11 @@
 				var dis=($(this).outerWidth()-$(this).outerWidth())/2;
 				var l=pos-dis;
 				document.title=pos;
-				$('.tip').css({'left':l+'px'}).animate({'top':140,'opacity':1},300);
+				$('.tip').css({'left':l+'px'}).animate({'top':120,'opacity':1},300);
 			},function(){
-				$('.tip').animate({'top':100,'opacity':0},500);
+				if(!$('.tip').is(':animated')){
+					$('.tip').animate({'top':100,'opacity':0},300);
+				}
 			})
 		})
 	</script>
@@ -63,5 +65,6 @@
 	<!-- 获取dis的宽度不能用width，因为width是获取的固定的宽，而此次是不固定的，所以用outerWidth().用按钮的位置pos减去dis,就可以往前走 -->
 	<!-- animate()动画效果top:140，完成时间是3秒，left用css({'left':l+'px'}已经设置了 -->
 	<!-- 第一个按钮时，透明度是由模糊变为清楚，opacity由0变1，但是第二个按钮已经是1了，所以没有模糊变为清楚的过渡，所以还得设置鼠标离开时将opacity变为0，离开的时候动画在将top：140变为100，且opacity由1变为0-->
+	<!-- 动作离开的时候有一个判断，如果是有动画就不用再加了，没有就加一个动画。 -->
 </body>
 </html>
