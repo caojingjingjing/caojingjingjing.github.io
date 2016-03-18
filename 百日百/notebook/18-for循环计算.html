@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<label for="">计算0-100的和：</label><input type="text" id="txt" placeholer="求0-100的和">
+	<input type="button" id="btn" value="计算">
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("#btn").click(function(){
+			var sum = 0;
+			for(var i=0;i<=100;i++)
+			{
+				sum = sum + i;
+			}
+			$("#txt").val(sum);
+		})
+	</script>
+</body>
+</html>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.block {
+			width: 200px;
+			height: 200px;
+			background-color: #f0f;
+		}
+	</style>
+</head>
+<body>
+	<div class="block"></div>
+	<button id="go">Go</button>
+	<button id="stop">STOP!</button>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+	// 开始动画
+	$("#go").click(function(){
+  		$(".block").animate({"margin-left": '200px'}, 2000);
+	});
+	// 当点击按钮后停止动画
+	$("#stop").click(function(){
+  		$(".block").stop();
+	});
+</script>
+</body>
+</html>

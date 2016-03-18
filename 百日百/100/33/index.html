@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>幽灵按钮</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+</head>
+<body>
+	<h1>第三十三天：幽灵按钮</h1>
+	<div class="box">
+		<div class="link link-laugh">
+			<span class="icon"></span>
+			<a href="#" class="button" data="Laugh ing…………">
+				<span class="line line-top"></span>
+				<span class="line line-right"></span>
+				<span class="line line-bottom"></span>
+				<span class="line line-left"></span>
+				Laugh
+			</a>
+		</div>
+		<div class="link link-smile">
+			<span class="icon"></span>
+			<a href="#" class="button" data="Simle ing…………">
+				<span class="line line-top"></span>
+				<span class="line line-right"></span>
+				<span class="line line-bottom"></span>
+				<span class="line line-left"></span>
+				Simle
+			</a>
+		</div>	
+		<div class="link link-sleep">
+			<span class="icon"></span>
+			<a href="#" class="button" data="Sleep ing…………">
+				<span class="line line-top"></span>
+				<span class="line line-right"></span>
+				<span class="line line-bottom"></span>
+				<span class="line line-left"></span>
+				Sleep 
+			</a>
+		</div>
+		<div class="tip"><em><span></span></em></div>					
+	</div>
+	<script>
+		$(function(){
+			$('.link .button').hover(function(){
+				var title=$(this).attr('data');
+				$('.tip em').text(title);
+				var pos=$(this).position().left+10;
+				var dis=($(this).outerWidth()-$(this).outerWidth())/2;
+				var l=pos-dis;
+				document.title=pos;
+				$('.tip').css({'left':l+'px'}).animate({'top':120,'opacity':1},300);
+			},function(){
+				if(!$('.tip').is(':animated')){
+					$('.tip').animate({'top':100,'opacity':0},300);
+				}
+			})
+		})
+	</script>
+	<!-- 选中link下的button，当鼠标滑过的操作和鼠标离开时候的动作，定义一个变量
+	title，将data的值取出来放到title中，滑过哪个a，$(this)代表哪个a。var title=$(this).attr('data')是将data的值放到title中，$('.tip em').text(title)再将title的值放到tip中的em。 -->
+	<!-- $(this).position()方法是获取一个盒子相对于它$(this)加了定位的父盒子之间的距离，如果它所在的直接父盒子没有相对定位，就一直往上找，直到最后没有的话，就是body，此处this是button的，相对于它的父直接父盒子是link,继续往上找，找到的是带有相对定位的box。由于position获取的是一个对象，所有要获取什么属性，后边得加.left --><!-- 按钮填充的一半 -->
+	<!-- 要设置提示框居中，因为是不固定的宽度，此处的是提示框大于按钮的宽度，所以用提示框的宽度减去下边对应按钮的宽度再除以2，如果没有大于就不减去了。 -->
+	<!-- 获取dis的宽度不能用width，因为width是获取的固定的宽，而此次是不固定的，所以用outerWidth().用按钮的位置pos减去dis,就可以往前走 -->
+	<!-- animate()动画效果top:140，完成时间是3秒，left用css({'left':l+'px'}已经设置了 -->
+	<!-- 第一个按钮时，透明度是由模糊变为清楚，opacity由0变1，但是第二个按钮已经是1了，所以没有模糊变为清楚的过渡，所以还得设置鼠标离开时将opacity变为0，离开的时候动画在将top：140变为100，且opacity由1变为0-->
+	<!-- 动作离开的时候有一个判断，如果是有动画就不用再加了，没有就加一个动画。 -->
+</body>
+</html>

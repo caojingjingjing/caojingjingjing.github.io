@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="txt">
+	<input type="button" id="btn" value="测试">
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("#btn").click(function(){
+			var num = $("#txt").val();
+			var num1 = Number(num);
+			if(num1>=0 && num1<=10)
+			{
+				alert("0到10");	
+			}else if(num1>10 && num1<=20)
+			{
+				alert("10到20");
+			}else if(num1>20 && num1<=30)
+			{
+				alert("20到30");
+			}else if(num1>30 && num1<=40)
+			{
+				alert("30到40");
+			}else if(num1>40 && num1<=50)
+			{
+				alert("40到50");
+			}else{
+				alert("其他范围");
+			}
+		})
+	</script>
+</body>
+</html>

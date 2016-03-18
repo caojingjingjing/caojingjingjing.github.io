@@ -1,0 +1,186 @@
+/* common.css */
+body {
+   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+   margin: 0;	
+}
+* {
+	box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.hero {
+	background-color: rgb(0, 188, 212);
+}
+.hero h1{
+	color: #fff;
+	text-align: center;
+	line-height: 160px;
+	font-weight: normal;
+}
+.toc {
+	/*width: 960px;*/
+	margin: 20px auto;
+	list-style: none;
+	padding: 0px 10px;
+	max-width: 800px;
+	/*在此处将列表变成盒子，
+	刚好因为盒子和内容正好一样大，
+	所以设置padding和margin看起来一样，但实则不一样。*/
+	/*当宽度小于800时，则随着浏览器的变大变小而变大变小
+	当宽度大于800时，则不随浏览器的变大再变大，保持800*/
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.toc li{
+	padding-bottom: 10px;
+}
+.toc a{
+	display: block;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 1s ease;
+    color: #212121;
+    text-decoration: none;
+}
+.toc a:hover {
+	 box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+}
+.toc a .id {
+	/*width: 48px;*/
+	height: 96px;
+	background-color: rgb(0, 188, 212);
+	color: #fff;
+	text-align: center;
+	line-height: 96px;
+/*	float: left;*/
+}
+.toc a .detail {
+	/*width: 910px;*/
+	height: 96px;
+	/*float: right;*/
+	/*overflow: hidden;*/
+	/*overflow: scroll;*/
+	padding-left: 10px;
+}
+@media(min-width:600px){
+	.toc a .id{
+		width: 20%;
+		float: left;
+	}
+	.toc a .detail{
+		width: 80%;
+		float: right;
+	}
+}
+.toc a .detail .title {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size:20px;
+}
+.toc a .detail .date {
+	opacity: .8;
+}
+/*siderbar*/
+.side-nav {
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 250px;
+	transition:all 1s .1s;
+	transform:translateX(-250px);
+	z-index: 4;}
+.side-nav.show {
+	transform:translateX(0px);
+	
+	/*position后盒子不会出现挤到哪，
+	而是重叠在一起，z-index设置正值可以将
+	压在下边的盒子显示到上边，也可以将盒子的
+	位置顺序换换，在后边的盒子显示在上边*/
+
+}
+.side-nav li{
+	font-family: arial;
+	list-style-type: none;
+	font-weight: bold;
+	color: gray;
+	padding-top: 20px;
+}
+.side-nav ul {
+	margin:50px 100px;
+}
+.side-nav a {
+	text-decoration: none;
+	color: gray;
+}
+.ui-mask {
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	/*position:fixed设置完以后宽度和
+	高度为0了;*/
+	/*left: 0;
+	top: 0;*/
+	display: none;
+	background-color: rgba(0,0,0,0.5);}
+.ui-mask.show {
+	display:block;
+	/*语句按顺序由上到下执行，
+	当执行了<div class="ui-mask"></div>时，
+	又执行样式时候时就执行.ui-mask的样式，
+	便已经隐藏了.ui-mask,因为这时候
+	并找不见.ui-mask.show，所以它的样式，
+	没有执行，(因为没有点击汉堡包
+	按钮)所以当点击了汉堡包按钮便给
+	ui-mask添加show时，才执行了.ui-mask.show的样式
+	此时就需要再次用display：block显示盒子。*/
+	
+}
+/*当什么也不点击时，ui-mask是隐藏的，当点击汉堡包
+按钮时，当点击汉堡包按钮时才显现ui-mask，将其设置
+一层和阴影差不多的背景色
+*/
+
+/*hamburger*/
+a.hamburger {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+	transition: background-color .5s;
+	cursor: pointer;
+	color: white;
+	font-size: 30px;
+} 
+a.hamburger:hover{
+	background-color: rgba(255, 255, 255, .3);
+}
+a.top {
+	font-size: 30px;
+	color: white;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	background-color:lightblue;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 10px;
+	position: fixed;
+	right: 50px;
+	bottom: 15px;
+}

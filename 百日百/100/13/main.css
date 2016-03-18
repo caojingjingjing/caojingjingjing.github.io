@@ -1,0 +1,32 @@
+
+*{margin: 20px auto;}
+h1 {
+    font-family: arial;
+    color: blue;
+    text-align: center;}
+.first,.second {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 150px;
+}
+.first {
+	background-color: #E91E63;
+	height: 150px;
+}
+@media(min-width: 700px) {
+	.first {
+		float: left;
+		width: 50%;
+	}
+}
+.second {
+	background-color: #03A9F4;
+	height: 150px;
+}
+@media(min-width: 700px){
+	.second {
+		float: left;
+		width: 50%;
+	}
+}

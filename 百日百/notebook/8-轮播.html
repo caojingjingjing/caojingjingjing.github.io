@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		padding: 0;
+	}
+		.big-box {
+			width: 800px;
+			height: 200px;
+
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			float: left;
+		}
+		.view {
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+		}
+		ul li{
+			list-style: none;
+			float: left;
+			border: 1px blue solid;
+			width: 20px;
+			margin-right: 10px;
+			text-align: center;
+			cursor:pointer;
+		}
+		.color {
+			background-color: #0ff;
+		}
+	</style>
+</head>
+<body>
+	<div class="view">
+		<div class="big-box">
+			<div class="box box1">
+				<img src="images/1.jpg" alt="">
+			</div>
+			<div class="box box2">
+				<img src="images/2.jpg" alt="">
+			</div>
+			<div class="box box3">
+				<img src="images/3.jpg" alt="">
+			</div>
+			<div class="box box4">
+				<img src="images/4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<ul>
+		<li class="btn">1</li>
+		<li class="btn">2</li>
+		<li class="btn">3</li>
+		<li class="btn">4</li>
+	</ul>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$(".btn").click(function(){
+			var index = $(this).index();
+			// 获取单击按钮的索引值；
+			// var marleft = index*-100;
+			// 为了让视窗的图片从右向左滑动，将margin-left值慢慢的越来越小；
+			// 0 -200px -400px -800px，但是初始的时候点击第一个按钮时，marleft的值这时候是从0开始的，所以点击第一个按钮时没有反应的;
+			var marleft = index*-200;
+			// console.log(marleft);
+			$(".big-box").animate({"margin-left":marleft},1000);
+			// 大盒子(800*200)横向排列，通过overflow:hidden将视窗以外的部分隐藏
+			// 然后通过慢慢的减小margin-left的向左滑动；
+			$(this).addClass("color");
+			// 点击按钮的时候给按钮添加背景色；
+			$(this).siblings().removeClass("color");
+			// 点击一个按钮，其他按钮不加背景
+		})
+	</script>
+</body>
+</html>

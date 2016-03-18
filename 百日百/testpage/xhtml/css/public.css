@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+.clearfix:before,.clearfix:after{display:table;content: "";}
+.clearfix:after{clear: both;}
+.clearfix{zoom:1;}
+.top{border-bottom: solid 1px #e5e5e5;}
+.top-inner{width: 961px;margin: 0 auto;}
+.nav li{padding: 0;float: left;list-style-type: none;border-right: 1px solid #e5e5e5;}
+.nav a{text-decoration: none;display: block;line-height: 62px;
+	text-align: center;width: 191px;height: 62px;color:#272727;font-family: arial;}
+.nav a:hover{color: #fff;background-color: #c52300;}
+.header{background-image: url(../home/images/bgi_03.gif);}/*这个没给高度是因为有内容img*/
+.header-inner{width: 915px;margin: 0 auto;}
+.header-inner .logo{width: 288px;height: 135px;float: left;}
+.first a{border-left: 1px solid #e5e5e5;}
+.footer{border-top: solid 1px #e4e4e4;background-color: #fff; }
+.footer-inner{margin: 0 auto;margin-top: 30px;}
+.footer-inner p{color:#808080;text-align: center;font-family: arial;line-height: 25px;font-size: 10px;font-weight: bold;}
+.footer-inner a{color: #a84540;font-family: arial;}
+.second{text-decoration: none;}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="txt1"> 
+	<input type="text" class="txt2">
+	<input type="text" class="txt3">
+	<input type="button" value="求和" id="btn">
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("#btn").click(function(){
+			var str1 = $(".txt1").val();
+			var str2 = $(".txt2").val();
+			var num1 = Number(str1);
+			var num2 = Number(str2);
+			var num = num1 + num2;
+			$(".txt3").val(num);
+		})
+	</script>
+</body>
+</html>

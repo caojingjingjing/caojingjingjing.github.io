@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		.header{
+			height: 500px;
+			background-color: lightgreen;
+		}
+		p{
+			font-size: 30px;
+		}
+		.banner{
+			height: 500px;
+			background-color: lightpink;
+		}
+		.footer{
+			height: 500px;
+			background-color: lightblue;
+		}
+		.box{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			position: relative;
+			left: 100px;
+			top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header"><p>position的第三种情况:position：relative不跳出一般流程，然后以它自己所在的位置为起始点，然后通过left和top改变位置。</p></div>
+	<div class="banner">
+		<div class="box"></div>
+	</div>
+	<div class="footer"></div>
+
+</body>
+</html>

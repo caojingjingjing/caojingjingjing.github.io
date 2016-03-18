@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="txt1">
+	<input type="text" class="sign">
+	<input type="text" class="txt3">
+	=
+	<input type="text" class="result">
+	<input type="button" id="btn" value="等于">
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("#btn").click(function(){
+			var num1 = Number($(".txt1").val());
+			var num2 = Number($(".txt3").val());
+			var sign = $(".sign").val();
+			var result = 0;
+			if(sign == "+"){
+				var result = num1 + num2;
+			}
+			if(sign == "-"){
+				var result = num1 - num2;
+			}
+			if(sign == "*"){
+				var result = num1 * num2;
+			}
+			if(sign == "/"){
+				var result = num1 / num2;
+			}
+			$(".result").val(result);
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.big-box {
+			width: 800px;
+			height: 200px;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			float: left;
+		}
+		/*.box1{
+			background-color: #ff0;
+		}
+		.box2{
+			background-color: #f0f;
+		}
+		.box3{
+			background-color: #0ff;
+		}
+		.box4{
+			background-color: #f00;
+		}*/
+		.view {
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+		}
+		ul li {
+			float: left;
+			list-style-type: none;
+			width: 30px;
+			line-height: 30px;
+			border: 1px solid blue;
+			text-align: center;
+			margin: 10px 7px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		ul {
+			margin-left: 5px;
+		}
+		.color {
+			background-color: #ff0;
+		}
+	</style>
+</head>
+<body>
+	<div class="view">
+		<div class="big-box">
+			<div class="box box1">
+				<img src="images/1.jpg" alt="">
+			</div>
+			<div class="box box2">
+				<img src="images/2.jpg" alt="">
+			</div>
+			<div class="box box3">
+				<img src="images/3.jpg" alt="">
+			</div>
+			<div class="box box4">
+				<img src="images/4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<ul>
+		<li class="btn">1</li>
+		<li class="btn">2</li>
+		<li class="btn">3</li>
+		<li class="btn">4</li>
+	</ul>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$(".btn").click(function(){
+			var index = $(this).index();
+			/*点击选中元素，然后触发单击事件，声明index变量，用来获取选中对象在同级中的索引值(0 1 2 3)*/
+			// console.log(index);
+			var marleft = index*-200;
+			/*将索引值乘以负的图片宽度，这样就可以将图片的margin-left，慢慢的缩小，来进行图片从右向左的移动*/
+			$(".big-box").animate({"margin-left":marleft},500);
+			// 当点击选中元素时，给big-box使用动画方法，进行图片轮播
+			$(this).addClass("color");
+			$(this).siblings().removeClass("color");
+			// 然后点击元素加一个背景色，其他的去掉背景色。
+		})
+	</script>
+</body>
+</html>

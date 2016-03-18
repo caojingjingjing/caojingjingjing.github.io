@@ -1,0 +1,43 @@
+h1 {
+	font-family: arial;
+	color: blue;
+	text-align: center;
+}
+a {
+	font-size: 30px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+.box {
+	width: 300px;
+	height: 300px;
+	border: solid blue 3px;
+	margin: 30px auto;
+	position: relative;
+}
+.ball {
+	width: 50px;
+	height: 50px;
+	background-color: lightgreen;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	transition:all 3s;
+}
+.box:hover .ball {
+	background-color: orange;
+/*	transition:all 3s;*/
+	left: 250px;
+	top: 250px;
+	border-radius: 50%;
+}
+/*如果position的绝对定位
+和相对定位配合使用，
+则需（父级盒子）
+定一个坐标系是relative(相对定位)，
+（子盒子）在坐标系内定位
+是absolute(绝对定位)，
+并且（使用top left bottom right
+中任意两个几个，也可以设置负值）
+确定位置*/

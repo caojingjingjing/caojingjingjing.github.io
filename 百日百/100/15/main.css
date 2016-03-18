@@ -1,0 +1,39 @@
+h1 {
+    font-family: arial;
+    color: blue;
+    text-align: center;}
+.nav-bar {
+	width: 70px;
+	height: 70px;
+	background-color: lightgreen;
+	display: none;
+	float: right;
+}
+.humburger-btn {
+	width: 70px;
+	height: 70px;
+	background-color: lightpink;
+	border-radius: 50%;
+	display: block;
+}
+@media(min-width: 500px){
+	.humburger-btn {
+		display: none;
+	}
+	.nav-bar {
+		display: block;
+		/*还原默认（显示此页面）*/
+	}
+}
+p {
+	font-family: arial;
+	font-size: 20px;
+}
+p:nth-of-type(1){
+	margin-top: 90px;
+}
+span{
+	color:blue;}
+/*p的上下自动包含和字体一样大小的外边距
+在这里字体是20，所以p的外边距是20px,margin-top要想
+把文字挤到盒子的下边需要是盒子的高度70+p的自动外边距*/

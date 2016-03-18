@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#pic1,#pic2,#pic3,#pic4{
+			height: 200px;
+			width: 200px;
+		}
+		ul li{
+			list-style: none;
+			float: left;
+			border: 1px blue solid;
+			width: 20px;
+			margin-right: 10px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.red{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<img id="pic1" src="images/1.jpg" alt="">
+	<ul>
+		<li class="li1">1</li>
+		<li class="li2">2</li>
+		<li class="li3">3</li>
+		<li class="li4">4</li>
+	</ul>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+	// 通过li的不同的class名来识别按下的是哪个按钮，
+	// 然后为每一个按钮分别添加事件和方法改变图片和背景色
+		$(".li1").click(function(){
+			$("#pic1").attr("src","images/4.jpg");
+			 $(this).addClass("red");
+			 $(".li2").removeClass("red");
+			 $(".li3").removeClass("red");
+			 $(".li4").removeClass("red");
+			// $(".li1").css("background-color","red");
+			// $(".li2").css("background-color","white");
+			// $(".li3").css("background-color","white");
+			// $(".li4").css("background-color","white");
+		});
+		$(".li2").click(function(){
+			$("#pic1").attr("src","images/3.jpg");
+			$(this).addClass("red");
+			$(".li1").removeClass("red");
+			$(".li3").removeClass("red");
+			$(".li4").removeClass("red");
+			// $(".li2").css("background-color","red");
+			// $(".li1").css("background-color","white");
+			// $(".li3").css("background-color","white");
+			// $(".li4").css("background-color","white");
+		});
+		$(".li3").click(function(){
+			$("#pic1").attr("src","images/2.jpg");
+			$(this).addClass("red");
+			$(".li1").removeClass("red");
+			$(".li2").removeClass("red");
+			$(".li4").removeClass("red");
+			// $(".li3").css("background-color","red");
+			// $(".li1").css("background-color","white");
+			// $(".li2").css("background-color","white");
+			// $(".li4").css("background-color","white");
+		});
+		$(".li4").click(function(){
+			$("#pic1").attr("src","images/1.jpg");
+			$(this).addClass("red");
+			$(".li1").removeClass("red");
+			$(".li2").removeClass("red");
+			$(".li3").removeClass("red");
+			// $(".li4").css("background-color","red");
+			// $(".li1").css("background-color","white");
+			// $(".li2").css("background-color","white");
+			// $(".li3").css("background-color","white");
+		});
+	</script>
+</body>
+</html>

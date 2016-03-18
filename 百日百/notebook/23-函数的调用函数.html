@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var cat = {
+			name:"旺旺",
+			age:2,
+			eat:function(food){          //方法
+				console.log(food);
+				return food;          
+				//返回值，如果没有返回值sayName中console.log是undefined；
+			},
+			sayName:function(name){
+				console.log(this.eat("鱼"));  
+				//输出当前对象的eat()方法  鱼
+				name="喵喵"
+				return name;
+				//返回喵喵，修改了传过来的旺旺
+			}
+		};
+		
+		console.log(cat.sayName("旺旺"));				
+	</script>
+</body>
+</html>
