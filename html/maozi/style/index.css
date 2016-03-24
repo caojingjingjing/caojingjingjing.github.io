@@ -1,0 +1,248 @@
+.clearfix:before,
+.clearfix:after {
+   content: " ";
+   display: block;
+   clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+.top {
+	/*height: 143px;*/
+	background-color: #000000;
+	min-width: 1146px;
+}
+.top-inner {
+	width: 973px;
+	margin: 0 auto;
+}
+.top-inner .logo {
+	float: left;
+	width: 451px;
+	height: 93px;
+	background-image: url(../images/logo.jpg);
+	margin-top: 25px;
+	background-repeat: no-repeat;
+}
+.top-inner .logo img {
+	margin-left: 111px;
+	margin-top: 25px;
+}
+.top-inner .nav {
+	width: 457px;
+	float: right;
+}
+.top-inner .nav li{
+	list-style-type: none;
+	float: left;
+	color: #7f7f7d;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 11px;
+	line-height: 143px;
+	margin-right: 28px;
+
+}
+span {
+	color: #cc2600;
+}
+.banner {
+/*	height: 352px;*/
+	background-image: url(../images/banner-bgi.gif);
+	min-width: 1146px;
+}
+.banner-inner {
+	position: relative;
+	width: 971px;
+	margin: 0 auto;
+}
+.banner-inner .left {
+	float: left;
+	width: 594px;
+	overflow: hidden;
+/*	解决子级盒子的margin-top显示在父级上*/
+}
+.banner-inner .left h1{
+	color: #fff;
+	margin-top: 65px;
+	margin-bottom: 21px;
+}
+.banner-inner .left p {
+	color: #7f7f7d;
+	font-family: arial;
+	font-size: 14px;
+	line-height: 28px;
+}
+.banner-inner .left a{
+	color: #cc2608;
+}
+.banner-inner .left .btn {
+	width: 106px;
+	height: 41px;
+	background-color: #d53f00;
+	border-radius: 8px;
+	margin-top: 25px;
+	margin-bottom: 76px;	
+}
+.banner-inner .left .btn a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	color: #fcf1ec;
+}
+.banner-inner img {
+	float: left;
+	position: absolute;
+	top: -29px;
+}
+.main {
+	background-image: url(../images/mainbgi_02.gif);
+	/*height: 897px;*/
+	min-width: 1146px;
+}
+.main .main-inner {
+	
+	width: 941px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main-inner .main-top {
+	width: 941px;
+	margin-top: 40px;
+}
+.main-inner .second,.main-inner .first {
+	margin-right: 10px;
+}
+.main-bottom{
+	width: 941px;
+}
+.main-bottom .main-bottom-left{
+	width: 640px;
+	float: left;
+}
+.main-bottom .bottom-left-top{
+	width: 630px;
+	height: 380px;
+}
+.main-bottom .bottom-left-top h1{
+	color: white;
+	line-height: 70px;
+	margin-top: 30px;
+}
+.main-bottom .bottom-left-top img {
+	margin-right: 21px;
+}
+.main-bottom .bottom-left-top div{
+	width: 60px;
+	height: 224px;
+	float: left;
+	margin-right: 20px;
+}
+.main-bottom .bottom-left-top span {
+	color: white;
+}
+.main-bottom .bottom-left-top p {
+	font-family: arial;
+	color: #757f7f;
+	line-height: 25px;
+	width: 521px;
+}
+.main-bottom .bottom-left-top .txt {
+	margin-top: 21px;
+}
+.main-bottom .main-bottom-left .btn {
+	width: 106px;
+	height: 41px;
+	background-color: #d53f00;
+	border-radius: 8px;
+	margin-top: 25px;
+}
+.main-bottom .btn a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	color: #fcf1ec;
+}
+.main-bottom .bottom-left-bottom{
+	width: 630px;
+}
+.main-bottom .bottom-left-bottom img{
+	margin-right: 20px;
+	float: left;
+}
+.main-bottom .bottom-left-bottom span {
+	color: white;
+}
+.main-bottom .bottom-left-bottom p {
+	font-family: arial;
+	color: #757f7f;
+	line-height: 25px;
+}
+.main-bottom .bottom-left-bottom .btn{
+	margin-left: 82px;
+}
+.main-bottom .main-bottom-right{
+	width: 301px;
+	float: left;
+}
+.main-bottom .main-bottom-right .pic{
+	margin-top: 40px;
+	margin-bottom: 32px;
+}
+.main-bottom .main-bottom-right li{
+	list-style-type: none;
+	background-image: url(../images/sanjiao_13.jpg);
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 10px;
+	color: white;
+	font-family: arial;
+	font-size: 10px;
+	line-height: 35px;
+}
+.main-bottom .main-bottom-right ul{
+	margin-left: 21px;
+	margin-bottom: 35px;
+}
+.footer {
+	/*height: 150px;*/
+	min-width: 1146px;
+	background-image: url(../images/footbgi_42.gif);
+}
+.footer-inner {
+	float: left;
+	width: 830px;
+	overflow: hidden;
+	margin-left: 277px;
+}
+.footer-inner h4,.footer-inner p{
+	color: #7f7f7f;
+	font-family: arial;
+}
+.footer-inner p{
+	line-height: 38px;
+	font-weight: bold;
+	float: left;
+	margin-right: 300px;
+	margin-bottom: 60px;
+}
+.footer-inner h4{
+	margin-left:80px;
+	line-height: 38px;
+	margin-top: 38px;
+}
+.footer .footer-inner a{
+	color: #cc2608;
+}
+.footer .footer-inner img{
+	width: 26px;
+	height: 26px;
+	margin-right: 10px;
+
+}

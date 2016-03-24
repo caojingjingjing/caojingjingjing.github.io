@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+		padding: 0;
+		margin: 0;
+		}
+		ul li {
+			list-style-type: none;
+			float: left;
+			margin-left: 10px;
+		}
+		ul li img{
+			width: 300px;
+			height: 200px;
+		}
+		.pic {
+			display: none;
+			border: 2px solid #ccc;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<img src="images/1.png" alt="">	
+		</li>
+		<li>
+			<img src="images/2.png" alt="">
+		</li>
+		<li>
+			<img src="images/3.png" alt="">
+		</li>
+		<li>
+			<img src="images/4.png" alt="">
+		</li>
+	</ul>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$("li").mouseenter(function(){
+			var img = $(this).children().attr("src");
+			var pic = "<img class='pic' src='" + img + "'>"
+			$("body").append(pic);
+			$(".pic").show("slow");
+		})
+		$("li").mousemove(function(event){
+			$(".pic").css({
+				"left":(event.pageX+10)+"px",
+				"top":(event.pageY+20)+"px"
+			});
+		})
+		$("li").mouseleave(function(){
+			$(".pic").remove();
+		})
+	</script>
+</body>
+</html>
