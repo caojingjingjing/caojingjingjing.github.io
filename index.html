@@ -1,1051 +1,763 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>曹文静---个人网站</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- fonts -->
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Acme' rel='stylesheet' type='text/css'><!-- //fonts -->
 
-  <title>caojingjing's personalpage</title>
-  <!-- <link rel="stylesheet" href="" /> -->
-  <link rel="shortcut icon" href="style/images/logo_01.png" />
-  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
-  <link rel="stylesheet" media="all" href="style/css/prettyPhoto.css" type="text/css" />
-  <link rel="stylesheet" media="all" href="style/css/tipTip.css" type="text/css" />
-  <link rel="stylesheet" href="style/css/nivo-slider.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="style/css/nivostyle.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="style/css/contact.css" />
-  <script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
-  <script type="text/javascript" src="style/js/quicksand.js"></script>
-  <script type="text/javascript" src="style/js/scripts.js"></script>
-  <script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
-  <script type="text/javascript" src="style/js/twitter.min.js"></script>
-  <script src="style/js/jquery.form.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
-//<![CDATA[
-  $(document).ready(function() {
-  $('#submitform').ajaxForm({
-  target: '#error',
-  success: function() {
-  $('#error').fadeIn('slow');
-  }
-  });
-  });
-  </script>
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+<!-- skills -->
+<script src="js/pie-chart.js" type="text/javascript"></script>
+ <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#demo-pie-1').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'round',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'butt',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+			
+			$('#demo-pie-4').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+        });
+    </script>
+<!-- skills -->
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
 
 </head>
-
 <body>
-  <a name="top" id="top"></a>
-
-  <!-- Top Strip -->
-
-  <div id="strip"></div>
-
-  <div id="container">
-    <!-- Begin Header -->
-
-    <div id="header">
-      <img src="style/images/logo.png" width="248" height="134" alt="" class="logo" /> <!-- Begin Social Links -->
-
-      <ul class="social">
-        <li><a href="#"><img src="style/images/social/rss.png" width="16" height="16" alt="" title="This is a Tool Tip"
-        class="link" /></a></li>
-
-        <li><a href="#"><img src="style/images/social/twitter.png" width="16" height="16" alt="" title=
-        "This is a Tool Tip" class="link" /></a></li>
-
-        <li><a href="#"><img src="style/images/social/dribbble.png" width="16" height="16" alt="" title=
-        "This is a Tool Tip" class="link" /></a></li>
-
-        <li><a href="#"><img src="style/images/social/deviantart.png" width="16" height="16" alt="" title=
-        "This is a Tool Tip" class="link" /></a></li>
-
-        <li><a href="#"><img src="style/images/social/behance.png" width="16" height="16" alt="" title=
-        "This is a Tool Tip" class="link" /></a></li>
-
-        <li><a href="#"><img src="style/images/social/facebook.png" width="16" height="16" alt="" title=
-        "This is a Tool Tip" class="link" /></a></li>
-      </ul><!-- End Social Links -->
-    </div><!-- End Header -->
-
-    <div id="wrapper">
-      <!-- Left Menu Links -->
-
-      <div id="smoothmenu1">
-        <ul id="tab-menu" class="ddsmoothmenu">
-          <li>Welcome</li>
-
-          <li>Resume</li>
-
-          <li>Page With Images</li>
-
-          <li>Contact</li>
-
-          <li>Homework</li>
-
-          <li>Featured Work</li>
-
-          <!-- <li>Thumbs</li> -->
-
-         <!--  <li>Contact</li> -->
-        </ul><!-- Introduction Page Starts -->
-
-        <div class="tab-content">
-          <div class="tab show">
-            <h1>The R&eacute;sum&eacute; &amp; Portfolio of &Cacute;aow&eacute;njing</h1>
-            <!-- SLIDER GALLERY - ADD YOUR PHOTOS HERE -->
-
-            <div id="sliderbg">
-              <div id="slider-wrapper">
-                <div class="ribbon"></div>
-
-                <div id="slider" class="nivoSlider"><img src="style/images/slider1.jpg" alt=""/><img src="style/images/slider2.jpg" alt="" /> <img src=
-                "style/images/slider3.jpg" alt="" /></div>
-              </div><script type="text/javascript">
-          //<![CDATA[
-              $(window).load(function() {
-              $('#slider').nivoSlider();
-              });
-              //]]>
-              </script>
-            </div>
-            <p>Welcome to my personal website home page, I'm a crazy person who love to write code.
-            Here is a few words I like very much, I hope to share with you.</p>
-            <!--Bullet List -->
-            <ul class="bullet">
-              <li>Friends: a little good faith, a little generous, warm a little.</li>
-
-              <li>Doing things: a little humility, polite, indifferent to it.</li>
-
-              <li>Training: a little quieter, a little charity, a little calm.</li>
-              <li>Diet: a balanced point, control point, light point.</li>
-              <li>Proud of: a low-key that the convergence point, recollections point.</li>
-            </ul>
-           
-          </div><!-- Introduction Page Ends -->
-          <!-- Resume Section Starts -->
-        
-          <div class="tab">
-            <h1>My R&eacute;sum&eacute</h1><!-- Resume Tab Links -->
-
-            <ul class="inner_tab">
-              <li><a href="#">Education</a></li>
-
-              <li><a href="#">Hope company</a></li>
-
-              <!-- <li><a href="#">Education</a></li> -->
-
-              <li><a href="#">Skills</a></li>
-
-              <li><a href="#">Certificate of honor</a></li>
-
-            </ul><!-- tab "panes" -->
-
-            <div class="panes">
-              <!-- eadution Page Starts -->
-
-              <div>
-                <!-- Little Picture Scroller -->
-                <!-- add your image scroller pics here -->
-
-                <div class="wrap">
-                  <div class="notes_img">
-                    <div class="note"><img src="style/images/photo1.jpg" alt="" style="width:200px;height:200px"/></div>
-
-                    <div class="note"><img src="style/images/photo2.jpg" alt="" style="width:200px;height:200px"/></div>
-
-                    <div class="note"><img src="style/images/photo1.jpg" alt="" style="width:200px;height:200px"/></div>
-                   <div class="note"><img src="style/images/photo2.jpg" alt="" style="width:200px;height:200px"/></div>
-                  </div>
-                </div><span style="font-size:20px;display:block;padding-bottom:10px" >>>>基本资料</span>
+<!-- banner -->
+<div class="header-top">
+	<div class="container">
+		<ul>
+			<li><a class="scroll" href="#about"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Resume</a></li>
+			<li><a class="scroll" href="#emailme"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email me</a></li>
+			<!-- <li><a href="javascript:window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Print CV</a></li> -->
+			<li><a href="#portfolioModal9" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+				<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>My Photo</a></li>
+		</ul>
+	</div>
+</div>	
+<div class="header">
+	<div class="container">
+		<div class="col-md-8 header-left">
+			<div class="col-sm-5 pro-pic">
+				<img class="img-responsive" src="images/pic1.jpg" alt=" "/>
+			</div>
+			<div class="col-sm-5 pro-text">
+				<h1>曹文静</h1>
+				<!-- <h3>求职职位：web前端工程师</h3> -->
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 header-right ">
+			<ul class="list-left">
+				<li>Email:</li>
+				<li>Phone no:</li>
+				<li>Address: </li>
+			</ul>
+			<ul class="list-right">
+				<li><a href="caowenjing2013@126.com">caowenjing2013@126.com</a></li>
+				
+				<li>18332569652</li>
+				<li>河北省秦皇岛市</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<div id="about" class="about">
+	<div class="container">
+		<h3 class="tittle">About Me</h3>
+		<p class="abt-para">
+			<h3 style="margin-bottom:20px;font-family:'微软雅黑'">>>>基本资料</h3>	
+				  <p style="line-height:30px">姓  名：曹文静</p>
+                  <p style="line-height:30px">性  别：女</p>
+                  <p style="line-height:30px">民  族：汉</p>
+                  <p style="line-height:30px">学  历：本科</p>
+                  <p style="line-height:30px">政治面貌：中共党员</p>
+                  <p style="line-height:30px">出生日期：1992.06.07</p>
                
-                  姓  名：曹文静</br>
-                  性  别：女</br>
-                  民  族：汉</br>
-                  政治面貌：中共预备党员</br>
-                  出生日期：1992.06.07</br>
-                  学  历：本科</br>
-                  专  业：计算机科学与技术</br>
-                  毕业学校：河北科技师范学院<br/>
+                  <p style="line-height:30px">专  业：计算机科学与技术</p>
+                  <p style="line-height:30px">毕业学校：河北科技师范学院</p>
+             <h3 style="margin-bottom:20px;margin-top:20px;font-family:'微软雅黑'">>>>自我评价</h3> 
+             	<p style="line-height:30px">
+             		 愿意吃苦受累，通过自己富有激情、积极主动的努力实现自身价值。作风优良、待人诚恳，人际关系良好，处事冷静稳健，能合理地统筹安排生活中的事务。具备较强的逻辑思维和判断能力，对事情认真负责，有很强的责任心和团队意识；自信、乐观，具有一定的创新意识和创造能力。
+             	</p>		
                   
-                   <span style="font-size:20px;display:block;padding-top:10px;padding-bottom:10px" >>>>自我评价</span>
-               
-                   愿意吃苦受累，通过自己富有激情、积极主动的努力实现自身价值。作风优良、待人诚恳，人际关系良好，处事冷静稳健，能合理地统筹安排生活中的事务。具备较强的逻辑思维和判断能力，对事情认真负责，有很强的责任心和团队意识；自信、乐观，具有一定的创新意识和创造能力。  <br />
-                <br/>
-              </div><!-- eadution Page Ends -->
-              <!-- Employment Page Starts -->
+		</p>
+	</div>
+	
+<!-- education -->
+<div class="employment">
+	<div class="container">
+		<h3 class="tittle ">Work Experience</h3>
+		<p class="abt-para ">实习web前端一年</p>
+	<!-- 	<div class="col-md-6 employ-left">
+			<h4>01</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>项目介绍</h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>项目介绍<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>02</h4>
+		</div>
+		<div class="col-md-6 employ-left ">
+			<h4>03</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>项目介绍</h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>项目介绍<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>04</h4>
+		</div> -->
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- education -->
 
-              <div>
-                <div class="job">
-                  <h2>Web Designer</h2>
-
-             <!--      <h4>June 2015</h4> -->
-
-                 <!--  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed. Vestibulum
-                  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed egestas mattis
-                  tortor, quis auctor orci commodo.</p> -->
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="job">
-                  <!-- <h2>Ampersand Design Company - Junior Designer</h2>
-
-                  <h4>January 2009 / June 2010</h4>
-
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed. Vestibulum
-                  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed egestas mattis
-                  tortor, quis auctor orci commodo.</p> -->
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="job">
-                 <!--  <h2>Blue Cat Design - Freelance Tea Maker</h2>
-
-                  <h4>September 2009 / January 2009</h4>
-
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed. Vestibulum
-                  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed egestas mattis
-                  tortor, quis auctor orci commodo.</p> -->
-                </div>
-              </div><!-- Employment Page Ends -->
-             <!-- Education Page Ends -->
-              <!-- Skills Page Starts -->
-
-              <div>
-               <!--  <p>Maecenas vehicula condimentum consequat. Ut suscipit ipsum eget leo convallis feugiat upsoyut
-                fermentum leo auctor. In consequat turpis at nisiper otue vestibulum at bibendum lectus pulvinar. Lorem
-                ipsum dolor sit amet, consectetur adipis.</p><br /> -->
-                <!-- First Column Starts -->
-
-                <div class="one-half">
-                  <h2>Html/Css<img src="style/images/4star.png" class="star" alt="" width="94" height=
-                  "20" /></h2>
-                  <div class="divider"></div>
-
-                  <h2>Photoshop <img src="style/images/3star.png" class="star" alt="" width="94" height=
-                  "20" /></h2>
-
-                  <div class="divider"></div>
-
-                 <!--  <h2>Css3 <img src="style/images/3star.png" class="star" alt="" width="94" height=
-                  "20" /></h2> -->
-                </div><!-- Second Column Starts -->
-
-                <div class="one-half last">
-                  <h2>Jquery <img src="style/images/2star.png" class="star" alt="" width="94" height="20" /></h2>
-                  <div class="divider"></div>
-
-                  <h2>Design <img src="style/images/1star.png" class="star" alt="" width="94" height=
-                  "20" /></h2>
-
-                  <div class="divider"></div>
-
-                  <!-- <h2>Photography <img src="style/images/3star.png" class="star" alt="" width="94" height=
-                  "20" /></h2>Donec vulputate magna in elit blandit vitae congue lectus venenatis. Ut suscipit ipsum
-                  eget leo convallis feugiat upsoyut fermentum leo auctor. -->
-                </div>
-              </div><!-- Skills Page Ends -->
-              <!-- honor Page Starts -->
-
-              <div style="display: block;">
-                <!-- <p>Ut suscipit ipsum eget leo convallis feugiat upsoyut fermentum leo auctor. In consequat turpis at
-                nisiper otue vestibulum at bibendum lectus pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Sed egestas mattis tortor, quis auctor.</p> -->
-
-                <div class="clear"></div><br />
-                <!-- First Column Starts -->
-
-                <div class="one-half">
-                  <h2>School Honor List</h2>
-
-                  <ul class="check_list">
-                    <li>2012-2013学年 获学校二等奖学金</li>
-                    <li>2012-2013学年 获学校优秀团干</li>
-                    <li>2013—2014学年 校级三好学生</li>
-                    <li>2013—2014学年 校级优秀团干</li>
-                    <li>2013—2014学年 获国家励志奖学金</li>
-                    <li>2013—2014学年 获学校一等奖学金</li>
-                    <li>2014-2015学年 获学校二等奖学金</li>
-                  </ul>
-
-                
-                </div><!-- Second Column Starts -->
-
-                <div class="one-half last">
-                  <h2>Other certificate</h2>
-
-                  <ul class="check_list">
-                    <li>办公自动化 OA<br />
-                    <br /></li>
-
-                    <li>会计从业资格证</li>
-                  </ul>
-
-                  
-                </div>
-              </div>
+<!-- portfolio -->
+<div class="portfolio">
+	<div class="container">
+		<h3 class="tittle ">Portfolio</h3>
+			<div class="portfolio-grids">
+				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+				<script type="text/javascript">
+									$(document).ready(function () {
+										$('#horizontalTab').easyResponsiveTabs({
+											type: 'default', //Types: default, vertical, accordion           
+											width: 'auto', //auto or any width like 600px
+											fit: true   // 100% fit in a container
+										});
+									});
+									
+				</script>
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><!-- <span>All</span> --></li> 
+							<!-- <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Web Design</span></li> 
+							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Graphic Design</span></li>  -->
+						</ul>				  	 
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic4.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic5.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic14.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd  ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- //portfolio -->
+<!-- more skills -->
+<div class="more">
+	<div class="container">
+		<h3 class="tittle ">Skills</h3>
+		<div class="col-md-6 skill-left ">
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success" style="width: 30%">JQUERY  /   ZEPTO
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning " style="width: 40%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>80%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success1" style="width: 30%">JAVA SCRIPT
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning1" style="width: 40%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>80%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success3" style="width: 30%">HTML5  /   CSS3
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning3 " style="width: 50%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>85%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success2" style="width: 30%">NODE.JS
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning2" style="width: 10%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>30%</p>
+				  <div class="clearfix"></div>
+			</div>
+			
+			<div class="progress no-marg">
+				  <div class="progress-bar progress-bar-success4" style="width: 30%">JSON
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning4" style="width: 10%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>30%</p>
+				  <div class="clearfix"></div>
+			</div>
+		</div>
+		
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- more skills -->
+<!-- contact -->
+<div id="emailme" class="contact">
+	<div class="container">
+		<h3 class="tittle">Contact</h3>
+		<div class="col-md-6 contact-left ">
+			<div class="horizontal-tab">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">Contact me</a></li>
+					<!-- <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Hire me</a></li> -->
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active in" id="tab1">
+						<div class="contact-form">
+							<ul>
+								<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>河北省秦皇岛市</span></li>
+								<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="caowenjing2013@126.com">caowenjing2013@126.com</a></li>
+								<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>18332569652</li>
+							</ul>
+							<!-- <form>
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+								<input type="submit" value="Submit" >
+							</form> -->
+						</div>
+					 
+					</div>
+					<div class="tab-pane" id="tab2">
+					  <div class="contact-form">
+							<!-- <form>
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Description...</textarea>
+								<input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+									<div class="fileUpload btn btn-primary">
+										<span>Upload</span>
+										<input id="uploadBtn" type="file" class="upload" />
+									</div>
+								<input type="submit" value="Send Request" >
+							</form> -->
+							<script>
+								// document.getElementById("uploadBtn").onchange = function () {
+								// 	document.getElementById("uploadFile").value = this.value;
+								// };
+							</script>
+						</div>
+					</div>
+					
+				</div>
             </div>
-          </div><!-- honor Page Ends -->
-          <!-- Page With Images Starts -->
-
-          <div class="tab">
-            <h1>Page With Images</h1>
-
-            <p><img src="style/images/picture.jpg" class="right" width="211" height="120" alt="" />Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed. Vestibulum
-            ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed egestas mattis tortor,
-            quis auctor orci commodo id. In hac habitasse platea dictumst. Integer sed nisi nibh. Integer neque mi,
-            pellentesque ut adipiscing ultrices, egestas vel ligula. Integer interdum ultrices turpis. Ut non est sed
-            odio malesuada congue ac id ipsum. Duis mi tellus, porttitor a tristique eu, porttitor a odio. Curabitur
-            accumsan cursus sollicitudin. Nullam quis ante ante, sed molestie elit. Morbi egestas est quis metus luctus
-            accumsan. Duis interdum lectus eget est hendrerit mollis.</p>
-
-            <p><img src="style/images/picture.jpg" class="left" width="211" height="120" alt="" />Aliquam porttitor
-            faucibus rhoncus. Aliquam erat volutpat. Vestibulum molestie fringilla mollis. Fusce eu neque arcu. Donec
-            blandit imperdiet mollis. Etiam suscipit nisl eget libero aliquet tincidunt. Ut non est sed odio malesuada
-            congue ac id ipsum. Duis mi tellus, porttitor a tristique eu, porttitor a odio. Curabitur accumsan cursus
-            sollicitudin. Nullam quis ante ante, sed molestie elit. Morbi egestas est quis metus luctus accumsan. Duis
-            interdum lectus eget est hendrerit mollis.Ut non est sed odio malesuada congue ac id ipsum. Duis mi tellus,
-            porttitor a tristique eu, porttitor a odio. Curabitur accumsan cursus sollicitudin. Nullam quis ante ante,
-            sed molestie elit. Morbi egestas est quis metus luctus accumsan. Duis interdum lectus eget est hendrerit
-            mollis.</p><!-- Scrolling Quotes -->
-
-            <blockquote>
-              <p>Ut eu consectetur nisi. Praesent facilisis diam nec sapien gravida non mattis justo imperdiet.
-              Vestibulum nisl urna, euismod sit amet congue at, bibendum non risus.</p><cite>&ndash; Quote Author
-              (Quote #1)</cite>
-            </blockquote>
-
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu eros velit, non blandit ipsum.
-              Donec pretium, nibh vitae tristique tempor, enim sem condimentum lacus, vel mattis mauris risus id justo.
-              Nullam tincidunt, augue sit amet euismod condimentum, orci elit dignissim odio, a viverra augue enim in
-              lectus.</p><cite>&ndash; Quote Author (Quote #2)</cite>
-            </blockquote>
-
-            <blockquote>
-              <p>Donec rutrum convallis viverra. Suspendisse vehicula, risus sit amet luctus pharetra, quam ante
-              condimentum metus, porttitor vulputate magna felis quis dui.</p><cite>&ndash; Quote Author (Quote
-              #3)</cite>
-            </blockquote>
-          </div><!-- Page With Images Ends -->
-          <!-- Services Page Starts -->
-
-          <div class="tab">
-            <div class="event-in">
-              <a  href="100/index.html">
-              <img src="style/images/contact.png" style="top: 20px;width:700px;height:500px;" alt=" "/>
-              <span class="rollover1"></span>
-            </a>
+		</div>
+		<div class="clearfix"></div>
+		<p class="copy-right">Copyright &copy; 2016.Resume caowenjing  name All rights reserved.<a target="_blank" href="http://caojingjingjing.github.io/">个人网站</a></p>
+	</div>
+</div>
+<!-- //contact -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
             </div>
-         <!--    <h1>Contact</h1>
- --> 
-            <!-- <p><img src="style/images/picture.jpg" class="right" width="193" height="110" alt="" />Maecenas vehicula
-            condimentum consequat. Ut suscipit ipsum eget leo convallis feugiat upsoyut fermentum leo auctor. In
-            consequat turpis at nisiper otue vestibulum at bibendum lectus pulvinar.Ut non est sed odio malesuada
-            congue ac id ipsum. Duis mi tellus, porttitor a tristique eu, porttitor a odio. Curabitur accumsan cursus
-            sollicitudin. Nullam quis ante ante, sed molestie elit. Morbi egestas est quis metus. Feugiat immitto
-            ullamcorper hos luptatum gilvus eum.</p> --><!-- Accordian Starts -->
-
-            <!-- <h2 class="acc_trigger"><a href="#">Web Design &amp; Development</a></h2>
-
-            <div class="acc_container">
-              <div class="block">
-                <h3>Need a Website?</h3>
-
-                <p><img src="style/images/services.jpg" alt="" width="80" height="70" />Consequat te olim letalis premo
-                ad hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit, jumentum
-                transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico, ludus, at.
-                Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos luptatum gilvus
-                eum.</p>
-              </div>
-            </div>
-
-            <h2 class="acc_trigger"><a href="#">Logo / Corporate Identity</a></h2>
-
-            <div class="acc_container">
-              <div class="block">
-                <h3>Need a Logo?</h3>
-
-                <p><img src="style/images/services.jpg" alt="" width="80" height="70" />Consequat te olim letalis
-                premo ad hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit,
-                jumentum transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico,
-                ludus, at. Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos
-                luptatum gilvus eum. Delenit patria nunc os pneum acsi nulla magna singularis proprius.</p>
-
-                <p>Praesent duis vel similis usitas camur, nostrud eros opes verto epulae feugiat ad. Suscipit modo
-                magna letalis amet et tego accumsan facilisi, meus. Vindico luptatum blandit ulciscor mos caecus
-                praesent sed meus velit si quis lobortis praemitto.</p>
-              </div>
-            </div>
-
-            <h2 class="acc_trigger"><a href="#">Seach Engine Optimization</a></h2>
-
-            <div class="acc_container">
-              <div class="block">
-                <h3>Need to be Heard?</h3>
-
-                <p><img src="style/images/services.jpg" alt="" width="80" height="70" />Consequat te olim letalis premo ad
-                hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit, jumentum
-                transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico, ludus, at.
-                Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos luptatum gilvus
-                eum. Delenit patria nunc os pneum acsi nulla magna singularis proprius.</p>
-
-                <p>Praesent duis vel similis usitas camur, nostrud eros opes verto epulae feugiat ad. Suscipit modo
-                magna letalis amet et tego accumsan facilisi, meus. Vindico luptatum blandit ulciscor mos caecus
-                praesent sed meus velit si quis lobortis praemitto.</p>
-              </div>
-            </div>
-
-            <h2 class="acc_trigger"><a href="#">eCommerce</a></h2>
-
-            <div class="acc_container">
-              <div class="block">
-                <h3>Have Products to Sell?</h3>
-
-                <p><img src="style/images/services.jpg" alt="" width="80" height="70" />Consequat te olim letalis premo
-                ad hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit, jumentum
-                transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico, ludus, at.
-                Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos luptatum gilvus
-                eum. Delenit patria nunc os pneum acsi nulla magna singularis proprius.</p>
-
-                <p>Praesent duis vel similis usitas camur, nostrud eros opes verto epulae feugiat ad. Suscipit modo
-                magna letalis amet et tego accumsan facilisi, meus. Vindico luptatum blandit ulciscor mos caecus
-                praesent sed meus velit si quis lobortis.</p>
-              </div>
-            </div> -->
-          </div><!-- Services Page Ends -->
-          <!-- Portfolio Page Starts -->
-
-          <div class="tab">
-            <h1>Portfolio</h1>
-
-            <div id="portfolio">
-              <!-- Begin Portfolio Navigation -->
-
-              <ul class="gallerynav">
-                <li class="selected-1"><a href="#" data-value="all">All</a></li>
-
-                <li><a href="#" data-value="illustration">Html</a></li>
-
-                <li><a href="#" data-value="photography">Jquery</a></li>
-
-                <li><a href="#" data-value="web">Blog</a></li>
-
-                <li><a href="#" data-value="video">Video</a></li>
-              </ul><!-- End Portfolio Navigation -->
-              <!-- Begin Portfolio Elements -->
-
-              <ul id="gallery" class="grid">
-                <!-- Begin Image 1 -->
-
-                <li data-id="id-1" class="photography"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]"><img src="style/images/art/photo.jpg" alt="" /></a></li><!-- End Image 1 -->
-
-                <li data-id="id-2" class="illustration">
-                  <a href="html/maozi/eagles troop.html" title="">
-                    <img src="style/images/contact form.png" alt="" />
-                  </a></li>
-
-                <li data-id="id-3" class="video"><a href="http://www.vimeo.com/23407587" rel="prettyPhoto[gallery]"
-                title=""><img src="style/images/art/vid1.jpg" alt="" /></a></li>
-
-               <!--  <li data-id="id-4" class="web"><a href="style/images/art/large.jpg" rel="prettyPhoto[gallery]"
-                title=""><img src="style/images/art/web.jpg" alt="" /></a></li> -->
-                
-                <li data-id="id-5" class="illustration">
-                  <a href="html/home/home.html" title="">
-                    <img src="style/images/home page.jpg" alt="" />
-                  </a>
-                </li>
-
-                <li data-id="id-6" class="illustration"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/illustration.jpg" alt="" /></a></li>
-
-                <li data-id="id-7" class="video"><a href="http://www.vimeo.com/25352973" rel="prettyPhoto[gallery]"
-                title=""><img src="style/images/art/vid2.jpg" alt="" /></a></li>
-
-                <!-- <li data-id="id-8" class="web"><a href="style/images/art/large.jpg" rel="prettyPhoto[gallery]"
-                title=""><img src="style/images/art/web.jpg" alt="" /></a></li>
- -->
-                <li data-id="id-9" class="illustration"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/illustration.jpg" alt="" /></a></li>
-
-                <li data-id="id-10" class="photography"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/photo.jpg" alt="" /></a></li>
-
-                <li data-id="id-11" class="video"><a href="http://www.vimeo.com/25380454" rel=
-                "prettyPhoto[gallery] 500 900" title=""><img src="style/images/art/vid3.jpg" alt="" /></a></li>
-
-               <!--  <li data-id="id-12" class="web"><a href="style/images/art/large.jpg" rel="prettyPhoto[gallery]"
-                title=""><img src="style/images/art/web.jpg" alt="" /></a></li>
- -->
-                <li data-id="id-13" class="photography"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/photo.jpg" alt="" /></a></li>
-
-                <li data-id="id-14" class="illustration"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/illustration.jpg" alt="" /></a></li>
-
-                <li data-id="id-15" class="photography"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/photo.jpg" alt="" /></a></li>
-
-                <!-- <li data-id="id-16" class="web"><a href="style/images/art/large.jpg" rel="prettyPhoto[gallery]"
-                title=""><img src="style/images/art/web.jpg" alt="" /></a></li>
- -->
-                <li data-id="id-13" class="web">
-                  <a href="notebook/6-下拉菜单.html">
-                    <img src="style/images/2.png" alt="" />
-                  </a>
-                </li>
-                <li data-id="id-13" class="web">
-                  <a href="插件/index.html">
-                    <img src="style/images/3.png" alt="" />
-                  </a>
-                </li>
-                <li data-id="id-14" class="photography"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/photo.jpg" alt="" /></a></li>
-
-                <li data-id="id-15" class="photography"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/photo.jpg" alt="" /></a></li>
-
-                <li data-id="id-16" class="illustration"><a href="style/images/art/large.jpg" rel=
-                "prettyPhoto[gallery]" title=""><img src="style/images/art/illustration.jpg" alt="" /></a></li>
-                 <li data-id="id-17" class="web">
-                    <a href="notebook/10-大图随鼠标移动.html">
-                      <img src="style/images/1.png" alt="" />
-                    </a>
-                  </li>
-              </ul>
-            </div>
-          </div><!--Portfolio Page Ends -->
-          <!--Featured Page Starts -->
-
-          <div class="tab">
-            <h1>Featured Work</h1><!-- Page Tabs -->
-
-            <ul class="inner_tab">
-              <li><a href="#">2 Projects Example</a></li>
-
-              <li><a href="#">Slide Thumbs Example</a></li>
-
-              <li><a href="#">Single Project</a></li>
-            </ul><!-- tab "panes" -->
-
-            <div class="panes">
-              <div>
-				<p>Ut suscipit ipsum eget leo convallis feugiat upsoyut fermentum leo auctor. In consequat turpis at
-                nisiper otue vestibulum at bibendum lectus pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Sed egestas mattis tortor, quis auctor.</p>
-				<div class="clear"></div><br />
-                <div class="one-half">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto" title="Add a title if you like"><img src=
-                  "style/images/featured.jpg" alt="" width="330" height="210" class="featured-left" /></a>
-                </div>
-
-                <div class="one-half last">
-                  <h3>A Web Design Project</h3>
-
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed,
-                  vestibulum.  Vindico luptatum blandit ulciscor mos caecus
-                praesent sed meus velit si quis lobortis praemitto. Ante ipsum primis in faucibus.</p>
-					<button><a href="#">Visit Site</a></button>
-                </div>
-
-                <div class="clear"></div>
-
-                <div class="divider3"></div>
-
-                <div class="one-half">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto" title="Add a title if you like"><img src=
-                  "style/images/featured.jpg" alt="" width="330" height="210" class="featured-left" /></a>
-                </div>
-
-                <div class="one-half last">
-                  <h3>A Web Design Project</h3>
-
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed,
-                  vestibulum.  Vindico luptatum blandit ulciscor mos caecus
-                praesent sed meus velit si quis lobortis praemitto. Ante ipsum primis in faucibus.</p>
-					<button><a href="#">Visit Site</a></button>
-                </div>
-              </div><!-- 1st Page Ends -->
-              <!-- 2nd Page Starts - Slide Thumbs -->
-
-              <div>
-                <div id="preview_wrap">
-                  <div id="preview_outer">
-                    <div id="preview_inner">
-                      <div>
-                        <img src="style/images/slider1.jpg" alt="" /> <a href="#">Project Link</a>
-                      </div>
-
-                      <div>
-                        <img src="style/images/slider2.jpg" alt="" /> <a href="#">Project Link</a>
-                      </div>
-
-                      <div>
-                        <img src="style/images/slider3.jpg" alt="" /> <a href="#">Project Link</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="thumbs">
-                  <div id="arrow"></div><span><img src="style/images/1-s.jpg" width="40" height="40" alt="" /></span>
-                  <span><img src="style/images/2-s.jpg" width="40" height="40" alt="" /></span> <span><img src=
-                  "style/images/3-s.jpg" width="40" height="40" alt="" /></span>
-                </div><!-- End Slide Thumbs -->
-
-                <h2>A Web Design Project</h2>
-
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed egestas mattis tortor,
-                quis auctor orci commodo id.</p>
-
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem ipsum dolor sit
-                amet,consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed egestas
-                mattis tortor, quis auctor orci commodo id.</p><button><a href="#">Visit Site</a></button>
-              </div><!-- 2nd Page Ends - Slide Thumbs -->
-              <!-- 3rd Page Starts - Single -->
-
-              <div>
-                <a href="style/images/art/6_large.jpg" rel="prettyPhoto" title="Add a title if you like"><img src=
-                "style/images/single.jpg" alt="" class="featured-single" width="648" height="206" /></a>
-
-                <div class="clear"></div><br />
-
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                consectetur adi pis. Nam elementum consequat sem, nec tincidunt enim feugiat sed. Vestibulum ante ipsum
-                primis in faucibus orci nec tincidunt enim.</p>
-
-                <div class="divider"></div><br />
-
-                <div class="one-half">
-                  <h2>A Web Design Project</h2>
-
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. orem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nam elementum consequat sem, nec tincidunt enim feugiat sed, dolor sit
-                  Sed egestas mattis tortor, quis auctor orci commodo id amet. Vestibulum Ante ipsum primis in faucibus
-                  orci luctus et ultrices posuere cubilia Curae; Sed egestas mattis tortor, quis auctor orci commodo
-                  id. Contrary to popular belief.</p>
-                </div>
-
-                <div class="one-half last">
-                  <h2>Services</h2>
-
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem ipsum dolor sit amet.</p>
-
-                  <ul class="bullet">
-                    <li>Web Design</li>
-
-                    <li>jQuery</li>
-
-                    <li>Hosting</li>
-                  </ul><button><a href="#">Visit Site</a></button>
-                </div>
-              </div>
-            </div>
-          </div><!-- Featured Ends -->
-          <!-- Thumbnail Gallery Starts -->
-
-          <div class="tab">
-            <h1>Thumbnail Gallery</h1>
-
-            <ul class="inner_tab">
-              <li><a href="#">web design</a></li>
-
-              <li><a href="#">illustration</a></li>
-
-              <li><a href="#">photography</a></li>
-            </ul><!-- tab "panes" -->
-
-            <div class="panes">
-              <div>
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-              </div><!-- Page2 Starts -->
-
-              <div>
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-              </div><!-- Page 3 Starts -->
-
-              <div>
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gal">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-
-                <div class="gallast">
-                  <a href="style/images/art/large.jpg" rel="prettyPhoto[pp-gal]" title=""><img src=
-                  "style/images/art/small.jpg" alt="" class="gal2" /></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- Thumbnail Gallery Ends -->
-          <!-- Contact Page Starts -->
-
-          <div class="tab">
-          <h1>Added Goodies</h1>
-
-          <p>Along with the six background textures, I have added some extra styles for your silder, menu ribbons, 
-			and header strip. I have also included  psd files so that you can easily add your own colours and text.</p>
-
-          <div class="divider2"></div>
-
-          <div class="one-half"><img src="style/images/featured.png" width="115" height="110" alt="" /> 
-			<img src="style/images/extras/available.png" width="115" height="110" alt="" /> 
-			<img src="style/images/extras/hire_me.png" width="115" height="110" alt="" /> 
-			<img src="style/images/extras/recent_work.png" width="115" height="110" alt="" /> 
-			<img src="style/images/extras/available2.png" width="115" height="110" alt="" /></div>
-
-          <div class="one-half last">
-          
-		  <ul class="bullet">
-            <li>Nullam luctus neque sed urna mattis interdum.</li>
-
-            <li>Duis enim lectus euismod non porttitor non, vulputate eget ipsum.</li>
-
-            <li>Proin imperdiet arcu in consequat malesuada, <a href="#" title="This is a Tool Tip" class="link">hover
-            over me to see a tool tip</a>.</li>
-          </ul>
-
-          <ul class="check_list">
-            <li>Nullam luctus neque sed urna mattis interdum.</li>
-
-            <li>Duis enim lectus euismod non porttitor non, vulputate eget ipsum.</li>
-
-            <li>Proin imperdiet arcu in consequat malesuada, <a href="#" title="This is a Tool Tip" class="link">hover
-            over me to see a tool tip</a>.</li>
-          </ul><img src="style/images/extras/blue_ribbon.png" width="14" height="28" alt="" />&nbsp;&nbsp; <img src=
-          "style/images/extras/red_ribbon.png" width="14" height="28" alt="" />&nbsp;&nbsp; <img src=
-          "style/images/extras/gold_ribbon.png" width="14" height="28" alt="" />&nbsp;&nbsp; <img src=
-          "style/images/extras/silver_ribbon.png" width="14" height="28" alt="" /></div>
-
-          <div class="clear"></div>
-
-          <div class="divider2"></div><img src="style/images/demo/demostrip1.png" width="103" height="100" alt=
-          "" />&nbsp; <img src="style/images/demo/demostrip2.png" width="103" height="100" alt="" />&nbsp; <img src=
-          "style/images/demo/demostrip3.png" width="103" height="100" alt="" />&nbsp; <img src=
-          "style/images/demo/demostrip4.png" width="103" height="100" alt="" />&nbsp; <img src=
-          "style/images/demo/demostrip5.png" width="103" height="100" alt="" />&nbsp; <img src=
-          "style/images/demo/demostrip6.png" width="103" height="100" alt="" /></div><!-- Contact Page Starts -->
-
-          <div class="tab">
-            <h1>Contact Information</h1>
-
-            <p>Maecenas vehicula condimentum consequat. Ut suscipit ipsum eget leo convallis feugiat upsoyut fermentum
-            leo auctor. In consequat turpis at nisiper otue vestibulum at bibendum lectus pulvinar. Lorem ipsum dolor
-            sit amet, consectetur adipis.</p>
-
-            <div class="divider"></div><!-- Begin Form -->
-
-            <div class="contact-left">
-              <form id="submitform" method='post' action='contact/submitemail.php' name="submitform">
-                <p class="label">Name</p><input id='form_name' type='text' name='name' />
-
-                <p class="label">Email *</p><input id='form_email' type='text' name='email' />
-
-                <p class="label">Message *</p>
-                <textarea id='form_message' rows='10' cols='10' name='message'>
-</textarea> <input id='form_submit' type='submit' name='submit' value='Submit' /> <input id="reset" type="reset"
-                value="reset" />
-              </form>
-
-              <div id="error"></div>
-            </div><!--End Form -->
-
-            <div class="contact-right">
-              <!-- GOOGLE MAP -->
-
-              
-			  <!-- Your Details -->
-
-              <ul class="contact-list">
-                <li class="phone">+44 621 468 421</li>
-
-                <li class="home"><a href="#" class="link">http://www.mysite.com</a></li>
-
-                <li class="email"><a href="#" class="link">me@mysite.com</a></li>
-
-                <li class="pdf"><a href="#">Download Resume</a></li>
-              </ul><!-- Your Details End -->
-            </div>
-
-            <div class="clearfix"></div><!-- Your Tweets-->
-
-            
-          </div>
-
-          <div class="clearfix"></div>
-        </div><!-- End -->
-        <!-- TWITTER - ADD YOUR USERNAME IN ID INSTEAD OF MINE -->
-		<div class="clear"></div>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div class="push"></div>
-  </div><!-- Begin Footer -->
-
-  </div><!-- Begin Footer -->
-
-  <div id="footer-wrapper">
-    <div id="footer">
-      <div id="footer-content">
-        <!-- Begin Copyright -->
-
-        <div id="copyright">
-          <p>&copy; Copyright
-            <script type="text/javascript">
-              var d = new Date()
-              document.write(d.getFullYear())
-            </script> 
-              CV / Resume caojingjingjing  All rights reserved                               
-                  <a href="https://caojingjingjing.github.io">https://caojingjingjing.github.io</a>
-          </p>
-
         </div>
-        <p id="back-top"><a href="#top" class="tip_top" title="back to top">top &uarr;</a></p>
-        
-
-      </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic9.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic6.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--//scrolling js-->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
 </body>
 </html>
-
