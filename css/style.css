@@ -1549,7 +1549,7 @@ background:#fff;
 	.team-gd {
 		padding: 0 8px;
 		float: left;
-		width: 50%;
+		width: 100%;
 		margin-top: 16px;
 	}
 	.thumb:hover ul li {
@@ -1651,6 +1651,7 @@ h3.tittle:after, h3.tittle:before {
 	
 }
 @media (max-width: 320px){
+
 	.header-top ul li a span {
 		margin-right: 4px;
 	}
@@ -1754,8 +1755,10 @@ h3.tittle:after, h3.tittle:before {
 	.team-gd {
 		padding: 0 3px;
 		float: left;
-		width: 50%;
-		margin-top: 8px;
+		width: 90%;
+		margin-top: 40px;
+        margin-left: 13px;
 	}
+
 }
 
