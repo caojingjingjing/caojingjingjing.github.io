@@ -155,10 +155,10 @@ h3.tittle {
 p.abt-para {
     color: #464646;
     line-height: 2.2em;
-    text-align: center;
+    /*text-align: center;*/
     font-size: 14px;
     width: 75%;
-    margin: 0 auto 50px;
+   /* margin: 0 auto 50px;*/
 }
 .abt-left{
 	background:#f7f7f7;
