@@ -1036,6 +1036,7 @@ background:#fff;
 	.header-right {
 		width: 47%;
 	}
+
 	.pro-text {
 		padding: 0;
 	}
@@ -1663,7 +1664,7 @@ h3.tittle:after, h3.tittle:before {
 	}
 	.header-top ul li {
 		line-height: 2.2em;
-		margin-right: 71px;
+		/*margin-right: 71px;*/
 	}
 	.header-top {
 		padding: 3px 0;
