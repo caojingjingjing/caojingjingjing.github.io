@@ -115,6 +115,12 @@ body a:hover{
     list-style-type: none;
     color: #fff;
 }
+.header-left ul li {
+     font-size: 14px;
+    line-height: 3em;
+    list-style-type: none;
+    color: #fff;
+}
 ul.list-left {
     float: left;
     width: 27%;
@@ -415,7 +421,7 @@ a.accordion-section-title span {
 }
 /*-- //numscroller --*/
 .portfolio{
-	padding:90px 0;
+	padding:0px 0;
     border-bottom: 5px solid #E4E4E4;
 }
 .sap_tabs{
